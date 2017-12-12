@@ -5,11 +5,13 @@ import java.util.Arrays;
 public class Num2Rmb {
 	public static void main(String[] args){
 		Num2Rmb nr = new Num2Rmb();
-		System.out.println(Arrays.toString(nr.divide(475786939.4402)));
-		System.out.println(nr.toHanStr("3421"));
+		System.out.println(Arrays.toString(nr.divide(475786939.22)));
+		System.out.println(nr.toHanStr("75498"));
 	}
+	
 	private String[] hanArr = {"零", "壹", "貳", "叁", "肆", "伍", "陆", "柒", "捌", "玖"};
-	private String[] unitArr = {"十", "百", "仟"};
+	private String[] unitArr = {"拾", "佰", "仟", "萬"};
+	
 	//把一个浮点值拆分成整数和小数两部分字符串
 	private String[] divide(double num){
 		//将浮点型强转成long即得到整数部分
@@ -18,6 +20,7 @@ public class Num2Rmb {
 		long xiao = Math.round((num - zheng) * 1000);
 		return new String[]{zheng + "", String.valueOf(xiao)};
 	}
+	
 	//把四位数字字符串变成汉字字符串
 	private String toHanStr(String numStr){
 		String result = "";
@@ -28,7 +31,7 @@ public class Num2Rmb {
 			int num = numStr.charAt(i) - 48;
 			//如果不是最后一位数字且不为零，添加单位
 			if(i != numLen - 1 && num != 0){
-				result += hanArr[num] + unitArr[numLen - 2 -i];
+				result += hanArr[num] + unitArr[numLen - 2 - i];
 			}
 			//否则不加单位
 			else{
