@@ -3,9 +3,9 @@ package com.wsx.chapterdemo4;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
-public class Gobang {
+public class GoBang {
 	public static void main(String[] args) throws Exception{
-		Gobang gb = new Gobang();
+		GoBang gb = new GoBang();
 		gb.initBoard();
 		gb.printBoard();
 		//获取键盘输入的方法
@@ -21,7 +21,7 @@ public class Gobang {
 			//把对应数组元素赋值为"●"
 			gb.board[yPos - 1][xPos - 1] = "●";
 			gb.printBoard();
-			System.out.println("请输入您下棋的坐标，应以x,y的格式：");
+			System.out.println("请输入您下棋的坐标，应以(x,y)的格式：");
 		}
 	}
 	
