@@ -8,7 +8,7 @@ public class Singleton_2 {
 		s1 = Singleton_2.getSingleton2();
 		System.out.println(s1 == s2);
 	}
-	
+	//使用volatile关键字私有静态变量保证唯一性，但会影响性能
 	private static volatile Singleton_2 singleton_2 = null;
 
 	public static Singleton_2 getSingleton2() {
