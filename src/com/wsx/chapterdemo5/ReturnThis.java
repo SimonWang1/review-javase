@@ -5,7 +5,7 @@ public class ReturnThis {
 	public ReturnThis grow() {
 		age ++;
 		//return this返回调用该方法的对象
-		//使用this可以让代码简洁，但可以造成实际意义的模糊
+		//使用this可以让代码简洁，但可能造成实际意义的模糊
 		return this;
 	}
 	public static void main(String[] args) {
