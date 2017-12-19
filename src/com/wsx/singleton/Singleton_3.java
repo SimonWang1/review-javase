@@ -2,10 +2,14 @@ package com.wsx.singleton;
 
 //Double Checked Locking
 public class Singleton_3 {
-	private static volatile Singleton_3 singleton_3 = null;
-
-	private Singleton_3() {
+	public static void main(String[] args) {
+		Singleton_3 s1, s2;
+		s1 = Singleton_3.getSingleton3();
+		s2 = Singleton_3.getSingleton3();
+		System.out.println(s1==s2);
 	}
+	
+	private static volatile Singleton_3 singleton_3 = null;
 
 	public static Singleton_3 getSingleton3() {
 		// 定义一个临时变量，在 Singleton3 不为空的时候（这是绝大部分的情况），
@@ -23,10 +27,7 @@ public class Singleton_3 {
 		}
 		return singleton_3;
 	}
-	public static void main(String[] args) {
-		Singleton_3 s1, s2;
-		s1 = Singleton_3.getSingleton3();
-		s2 = Singleton_3.getSingleton3();
-		System.out.println(s1==s2);
+	
+	private Singleton_3() {
 	}
 }
