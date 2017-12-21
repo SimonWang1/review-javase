@@ -1,7 +1,8 @@
 package com.wsx.chapterdemo5_1;
 
 public class Person {
-	//使用private修饰，封成员变量
+	//使用private修饰，封装成员变量
+	//JavaBean格式，不提供重载构造方法为POJO
 	private String name;
 	private int age;
 	//提供方法操作name成员变量

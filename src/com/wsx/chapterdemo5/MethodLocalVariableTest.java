@@ -7,7 +7,7 @@ public class MethodLocalVariableTest {
 		//
 //		System.out.println("方法局部变量a的值" + a);
 		a = 5;
-		//需赋值再取数，否则抛出未初始化异常
+		//局部变量存储在栈中需要指向堆内存即赋值操作，否则抛出未初始化异常
 		System.out.println("方法局部变量a的值" + a);
 	}
 }
