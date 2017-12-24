@@ -10,7 +10,7 @@ public class ScopeTest {
 		//定义方法局部变量j
 		int j;
 		for(j = 0; j < 2; j++) {
-			System.out.println("方法局部变量在栈中定义，代码块结束即回收，性能较好");
+			System.out.println("方法局部变量在栈中定义，代码块结束后回收，性能较好");
 		}
 		//定义代码块局部变量k
 		for(int k = 0; k < 3; k++) {
