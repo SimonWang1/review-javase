@@ -5,7 +5,7 @@ class Parent{
 }
 
 class Derived extends Parent{
-	private String tag = "Show me your code";
+//	private String tag = "Show me your code";
 }
 
 public class HideTest {
