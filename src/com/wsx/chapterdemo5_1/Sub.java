@@ -11,7 +11,7 @@ class Base{
 
 public class Sub extends Base{
 	public static void main(String[] args) {
-		Sub sub = new Sub("marry", 14, "red");
+		Sub sub = new Sub("mary", 14, "red");
 		System.out.println(sub.name + "------" + sub.size + "------" + sub.color);
 	}
 	
