@@ -7,7 +7,7 @@ public class Singleton4 {
 		// 在栈内存中创建Singleton引用变量s1, s2，此时变量为空
 		Singleton4 s1, s2;
 		// 通过类名调用getSingleton静态方法在堆内存中创建Singleton对象
-		// 使用“=”赋值操作符将引用变量指向对象，即在栈内存中存储堆内存地址
+		// 使用“=”将引用变量指向对象，即在栈内存中存储堆内存地址
 		s1 = Singleton4.getSingleton4();
 		s2 = Singleton4.getSingleton4();
 		// 引用变量s1, s2存储地址相同，返回true
