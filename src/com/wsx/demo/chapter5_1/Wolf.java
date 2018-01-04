@@ -2,7 +2,7 @@ package com.wsx.demo.chapter5_1;
 
 class Creature{
 	public Creature() {
-		System.out.println("Creature non construtor");
+		System.out.println("Creature non constructor");
 	}
 }
 
@@ -14,7 +14,7 @@ class Animal extends Creature{
 	public Animal(String name, int age) {
 		//通过this调用同一个重载构造器，返回相同属性
 		this(name);
-		System.out.println("Animal's two construtor, age: " + age);
+		System.out.println("Animal's two constructor, age: " + age);
 	}
 }
 

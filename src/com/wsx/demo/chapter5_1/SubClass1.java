@@ -1,7 +1,7 @@
 package com.wsx.demo.chapter5_1;
 
 class BaseClass1{
-	public int book = 6;
+	public String book = "计算机科学概论";
 	public void base() {
 		System.out.println("父类的普通方法");
 	}
@@ -24,7 +24,7 @@ public class SubClass1 extends BaseClass1{
 		sc.test();
 		//编译时类型为父类，运行时类型为子类，可能出现多态
 		BaseClass1 ploymophicBc = new SubClass1();
-		//访问父类实例变量
+		//父子类都有的属性该引用指向父类
 		System.out.println(ploymophicBc.book);
 		//执行父类base()方法
 		ploymophicBc.base();
