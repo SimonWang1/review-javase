@@ -14,16 +14,6 @@ public class SequenceTest2 {
 		SequenceTest2 parent = new Child();
 		//通过toString方法打印父类引用，指向子类构造器，消除未引用异常
 		System.out.println(parent.toString());
-	/*	
-	 	child static code
-	 	***************
-	 	parent static code
-	 	parent constractor
-	 	Parent a = 10
-	 	child constractor
-	 	Child a = 20
-	 	地址
-		*/
 	}
 	
 	public SequenceTest2(){
