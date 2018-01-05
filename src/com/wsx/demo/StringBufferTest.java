@@ -1,4 +1,4 @@
-package com.wsx.string;
+package com.wsx.demo;
 
 public class StringBufferTest {
 	public static void main(String[] args) {
