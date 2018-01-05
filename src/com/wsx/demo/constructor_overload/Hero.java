@@ -1,6 +1,7 @@
 package com.wsx.demo.constructor_overload;
 
 public class Hero {
+	//使用private修饰符封装属性
 	private String heroName;
 	private float heroHP;
 	private float heroArmer;
@@ -12,7 +13,7 @@ public class Hero {
 				"%nHeroHP: " + gareen.getHeroHP() + "%nHeroArmer: " + gareen.getHeroArmer() +
 				"%nHeroMoveSpeed: " + gareen.getHeroMoveSpeed() + "%n");
 	}
-	
+	//属性set，get方法
 	public void setHeroName(String heroName) {
 		this.heroName = heroName;
 	}
@@ -44,7 +45,7 @@ public class Hero {
 	public int getHeroMoveSpeed() {
 		return this.heroMoveSpeed;
 	}
-	
+	//重载构造器，方便传参
 	public Hero(String heroName, float heroHP, float heroArmer, int heroMoveSpeed) {
 		this.heroName = heroName;
 		this.heroHP = heroHP;

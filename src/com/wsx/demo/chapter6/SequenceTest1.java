@@ -1,4 +1,4 @@
-package com.wsx.demo.chapter5_1;
+package com.wsx.demo.chapter6;
 
 class Root{
 	static {
@@ -45,13 +45,13 @@ class Leaf extends Mid{
 	}
 }
 
-public class Test {
+public class SequenceTest1 {
 	public static void main(String[] args) {
 		//先调用静态代码块
 		//再依次调用类中普通初始化块，无参构造器，带参构造器
 		new Leaf();
 		System.out.println("********************");
-		//静态代码块只运行一次
+		//静态代码块仅执行一次
 		new Leaf();
 	}
 }
