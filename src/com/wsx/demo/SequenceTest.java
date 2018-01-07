@@ -1,4 +1,4 @@
-package com.wsx.demo.chapter6;
+package com.wsx.demo;
 
 public class SequenceTest {
 	static {
