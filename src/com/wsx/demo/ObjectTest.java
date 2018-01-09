@@ -22,7 +22,7 @@ public class ObjectTest extends Object{
 	}
 	
 	public String toString() {
-		return "花费" + this.price + "￥购买" + this.name ;
+		return "花费￥" + this.price + "购买" + this.name ;
 	}
 
 	public void finalize() {

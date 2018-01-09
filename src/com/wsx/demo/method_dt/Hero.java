@@ -2,7 +2,7 @@ package com.wsx.demo.method_dt;
 
 public class Hero {
 	public String heroName;
-	public int HP;
+	public float HP;
 	public static void main(String[] args) {
 		//在父类创建对象时引用类型可以和对象类型不同
 		Hero gareen = new ADHero();
