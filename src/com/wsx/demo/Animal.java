@@ -5,7 +5,7 @@ public abstract class Animal {
 	public abstract void eat();
 	
 	public void walk() {
-		System.out.println("使用" + this.legs + "腿行走");
+		System.out.println("used " + this.legs + " legs walking");
 	}
 	
 	protected Animal(int legs) {
