@@ -47,8 +47,8 @@ class Leaf extends Mid{
 
 public class SequenceTest1 {
 	public static void main(String[] args) {
-		//先调用静态代码块
-		//再依次调用类中普通初始化块，无参构造器，带参构造器
+		//在无继承关系的方法中创建对象，主方法内容执行顺序不变
+		//创建对象的执行顺序依次为（父类→子类）静态代码块，普通初始化块，无参构造器，带参构造器
 		new Leaf();
 		System.out.println("********************");
 		//静态代码块仅执行一次

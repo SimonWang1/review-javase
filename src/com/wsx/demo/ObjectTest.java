@@ -20,16 +20,16 @@ public class ObjectTest extends Object{
 	public ObjectTest() {
 		
 	}
-	
+	//重写Object类toString方法
 	public String toString() {
-		return "花费￥" + this.price + "购买" + this.name ;
+		return "花费 ￥" + this.price + " 购买" + this.name ;
 	}
-
+	//重写Object类finalize方法
 	public void finalize() {
 		//空返回值类型隐藏return null
 		System.out.println("如果基础不扎实，买了" + this.name + "也是从入门到放弃...");
 	}
-	
+	//重写Object类equals方法
 	public boolean equals(Object o) {
 		//判断输入参数类型是否属于本类
 		if(o instanceof ObjectTest) {

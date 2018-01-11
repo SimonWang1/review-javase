@@ -11,14 +11,13 @@ public class ReferenceTransferTest {
 		dw.a = 6;
 		dw.b = 3;
 		swap(dw);
-		System.out.println("交换结束后，a成员变量的值是" + dw.a + "；b成员变量的值是" + dw.b);
+		System.out.println("交换结束后，a成员变量的值是" + dw.a + "; b成员变量的值是" + dw.b);
 	}
 	public static void swap(DataWrap dw) {
 		//值交换
 		int tmp = dw.a;
 		dw.a = dw.b;
 		dw.b = tmp;
-		System.out.println("swap方法里，a成员变量的值是" + dw.a + "；b成员变量的值是" + dw.b);
+		System.out.println("swap方法里，a成员变量的值是" + dw.a + "; b成员变量的值是" + dw.b);
 	}
-	
 }
