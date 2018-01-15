@@ -10,7 +10,7 @@ public class BubbleSort {
 			for (int j = i + 1; j < intArray.length; j++) {
 				//如果选中元素大于后者元素
 				if (intArray[i] > intArray[j]) { 
-					//声明局部变量temp交换元素
+					//按照索引顺序交换数组最大值
 					int temp = intArray[i];
 					intArray[i] = intArray[j];
 					intArray[j] = temp;
