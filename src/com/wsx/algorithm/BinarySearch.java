@@ -2,23 +2,23 @@ package com.wsx.algorithm;
 
 public class BinarySearch {
 	public static void main(String[] args) {
-		int[] myList = {1, 3, 5, 7, 9};
-		binarySearch(myList, 7);
-		binarySearch(myList, 10);
+		int[] intArray = {1, 3, 5, 7, 9};
+		binarySearch(intArray, 7);
+		binarySearch(intArray, 10);
 	}
 
 	//二分法查找
-	public static void binarySearch(int[] list, int item) {
+	public static void binarySearch(int[] intArray, int item) {
 		//数组最小值下标
 		int low = 0;
 		//数组最大值下标
-		int high = list.length -1;
+		int high = intArray.length -1;
 		//在数组范围内循环遍历
 		while(low <= high) {
 			//数组中间值下标
 			int mid = (low + high) / 2;
 			//数组中间值
-			int guess = list[mid];
+			int guess = intArray[mid];
 			//若找到数值， 打印数值所在位置并中断循环
 			if(guess == item) {
 				System.out.println(mid + 1);
