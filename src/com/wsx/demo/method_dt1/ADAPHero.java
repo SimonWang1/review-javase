@@ -1,4 +1,4 @@
-package com.wsx.demo.method_dt;
+package com.wsx.demo.method_dt1;
 
 public class ADAPHero extends Hero implements Mortal{
 	

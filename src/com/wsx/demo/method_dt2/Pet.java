@@ -1,4 +1,4 @@
-package com.wsx.demo;
+package com.wsx.demo.method_dt2;
 
 public interface Pet {
 	public String getName();
