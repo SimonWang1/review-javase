@@ -1,6 +1,6 @@
 package com.wsx.singleton;
 
-//Simple
+// Simple
 public class Singleton1 {
 	public static void main(String[] args) {
 		Singleton1 s1, s2;

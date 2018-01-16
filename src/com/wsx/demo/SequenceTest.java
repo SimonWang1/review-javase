@@ -11,7 +11,7 @@ public class SequenceTest {
 	}
 
 	public static void main(String[] args) {
-		//执行顺序依次为静态代码块，属性声明，普通初始化块，构造器
+		// 执行顺序依次为静态代码块，属性声明，普通初始化块，构造器
 		new SequenceTest();
 	}
 

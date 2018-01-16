@@ -1,7 +1,7 @@
 package com.wsx.singleton;
 
-//Initialization Demand Holder
-//IoDH
+// Initialization Demand Holder
+// IoDH
 public class Singleton4 {
 	public static void main(String[] args) {
 		// 在栈内存中创建Singleton引用变量s1, s2，此时变量为空

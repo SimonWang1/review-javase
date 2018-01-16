@@ -1,9 +1,9 @@
 package com.wsx.demo.property_enum;
 
 public class EnumTest {
-	//TANK,WIZARD,ASSASSIN,ASSIST,WARRIOR,RANGED,PUSH,FARMING
+	// TANK,WIZARD,ASSASSIN,ASSIST,WARRIOR,RANGED,PUSH,FARMING
 	public static void main(String[] args) {
-		//使用枚举类定义常量，不会出现类未定义的属性，配合switch循环遍历
+		// 使用枚举类定义常量，不会出现类未定义的属性，配合switch循环遍历
 		HeroEnum type = HeroEnum.WIZARD;
 		switch (type) {
 		case TANK:

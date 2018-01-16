@@ -1,6 +1,6 @@
 package com.wsx.singleton;
 
-//Double Checked Locking
+// Double Checked Locking
 public class Singleton3 {
 	public static void main(String[] args) {
 		Singleton3 s1, s2;

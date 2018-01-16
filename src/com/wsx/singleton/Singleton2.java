@@ -1,6 +1,6 @@
 package com.wsx.singleton;
 
-//语义线程安全
+// 语义线程安全
 public class Singleton2 {
 	public static void main(String[] args) {
 		Singleton2 s1, s2;
