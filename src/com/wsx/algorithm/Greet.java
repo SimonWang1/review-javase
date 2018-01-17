@@ -1,9 +1,9 @@
 package com.wsx.algorithm;
 
 public class Greet {
-	// 调用栈，用于存储多个函数的变量
+	// 调用栈：栈主要用来存放栈帧，对栈帧的压入和弹出操作称为调用栈
 	public static void main(String[] args) {
-		// 调用函数greet，在站内存分配空间
+		// 调用函数greet，在栈帧存储地址
 		greet("jackson");
 	}
 
@@ -16,7 +16,7 @@ public class Greet {
 		System.out.println("getting ready to say bye...");
 		// 调用bye函数，挂起greet
 		bye();
-		// 无函数调用，从函数返回
+		// 无函数调用，从函数返回，隐藏return null
 	}
 
 	public static void greet2(String name) {
