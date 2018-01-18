@@ -11,10 +11,17 @@ public class FibonacciSequence {
 		System.out.println("F(" + i + ") = " + Fibonacci(i));
 	}
 
-	public static Integer Fibonacci(Integer n) {
-		if (n <= 2) {
+	// 斐波那契递归
+	public static int Fibonacci(int n) {
+		// 基线条件
+		if (n == 0) {
+			return 0;
+		}
+		else if (n <= 2) {
 			return 1;
-		} else {
+		}
+		// 递归条件
+		else {
 			return Fibonacci(n - 1) + Fibonacci(n - 2);
 		}
 	}
