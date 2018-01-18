@@ -9,9 +9,9 @@ public class Factorial {
 		Scanner scan = new Scanner(System.in);
 		while(true) {
 			System.out.print("请输入一个正整数：");
-			int i3 = scan.nextInt();
-			System.out.println("普通阶乘值为：" + mul(i3));
-			System.out.println("递归阶乘值为：" + mul(i3));
+			int num = scan.nextInt();
+			System.out.println("普通阶乘值为：" + mul(num));
+			System.out.println("递归阶乘值为：" + mul(num));
 		}
 	}
 	
