@@ -1,6 +1,6 @@
 package com.wsx.algorithm;
 
-public class SelectionSort1 {
+public class SelectionSort {
 	// —°‘Ò≈≈–Ú
 	public static void main(String[] args) {
 		int[] intArray = { 54, 6, 78, 34, 12, 45 };
