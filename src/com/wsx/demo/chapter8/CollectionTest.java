@@ -7,7 +7,7 @@ public class CollectionTest {
 		Collection<String> c = new ArrayList<String>();
 		// 添加元素
 		c.add("孙悟空");
-		// 添加泛型，不能add数字
+		// 泛型限定集合内容为String，不能add数字
 //		c.add(4);
 //		c.remove(4);
 		System.out.println("c集合的元素的个数为: " + c.size());
