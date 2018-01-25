@@ -4,7 +4,7 @@ import java.util.*;
 
 public class IteratorTest {
 	public static void main(String[] args) {
-		Collection<String> books = new HashSet<String>();
+		Collection<String> books = new HashSet<>();
 		books.add("算法导论");
 		books.add("Java编程思想");
 		// 获取books集合对应的迭代器

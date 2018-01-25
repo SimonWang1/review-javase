@@ -4,7 +4,7 @@ import java.util.*;
 
 public class CollectionTest {
 	public static void main(String[] args) {
-		Collection<String> c = new ArrayList<String>();
+		Collection<String> c = new ArrayList<>();
 		// 添加元素
 		c.add("孙悟空");
 		// 泛型限定集合内容为String，不能add数字
@@ -16,7 +16,7 @@ public class CollectionTest {
 				+ c.contains("孙悟空"));
 		c.add("算法导论");
 		System.out.println("c集合的元素: " + c);
-		Collection<String> books = new HashSet<String>();
+		Collection<String> books = new HashSet<>();
 		books.add("算法导论");
 		books.add("Java编程思想");
 		System.out.println("c集合是否完全包含books集合: "
@@ -27,7 +27,7 @@ public class CollectionTest {
 		// 删除c集合里的所有元素
 		c.clear();
 		System.out.println("c集合里的元素: " + c);
-		// 控制books即合理只剩下c集合里也包含的元素
+		// 控制books只剩下c集合也包含的元素
 		books.retainAll(c);
 		System.out.println("books集合的元素: " + books);
 	}

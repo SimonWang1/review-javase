@@ -7,3 +7,17 @@ final：修饰类不能被继承/实现，修饰方法不能被重写，修饰变量/引用表示只有一次赋值/
 抽象类单继承，接口多实现
 抽象类本身还是类，可以修饰成不同的访问权限、是否static、是否final，抽象类默认声明public static final
 创建对象的执行顺序依次为（父类→子类）静态代码块，属性声明，普通初始化块，无参构造器，带参构造器
+
+Collection Framework:
+都可以通过对象调用重写接口方法实现功能
+ArrayList: 基于数组，对比数组长度可变，查询快，添加删除慢，线程不安全
+Vector: 与ArrayList基本相同，线程安全，效率低用的不多
+LinkedList: 基于双向链表，查询慢，添加删除快，线程不安全
+HashSet: 本质是散列表的键，不允许重复，添加没有顺序，线程不安全
+HashMap: 散列表键值对形式，键唯一，查询添加删除速度快，线程不安全
+HashTable: 与HashMap基本相同，不能存放null，线程安全
+
+TreeSet: 
+LinkedHashSet:
+TreeMap: 
+LinkedHashMap: 
