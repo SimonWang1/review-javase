@@ -1,0 +1,23 @@
+package com.wsx.demo.collection;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListTest {
+	public static void main(String[] args) {
+		Hero[] heros = new Hero[5];
+		// 使用数组容易造成内存浪费和长度限制，索引超出数组长度会报错
+		heros[0] = new Hero("teemo");
+//		heros[20] = new Hero("gareen");
+		for(Hero hero : heros) {
+			System.out.println(hero);
+		}
+		// 创建容器类ArrayList，用于存放对象
+		List<String> hero = new ArrayList<>();
+		hero.add("garren");
+		System.out.println(hero.size());
+		// ArrayList长度随着对象的增加自动增长
+		hero.add("teemo");
+		System.out.println(hero.size());
+	}
+}

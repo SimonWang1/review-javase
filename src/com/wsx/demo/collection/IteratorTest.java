@@ -1,4 +1,4 @@
-package com.wsx.demo.chapter8;
+package com.wsx.demo.collection;
 
 import java.util.*;
 
