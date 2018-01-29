@@ -1,8 +1,8 @@
 package com.wsx.algorithm;
 
 public class SumArray {
+	// 数组求和
 	public static void main(String[] args) {
-		// 数组求和
 		int[] intArray = {1, 2, 3, 4, 5};
 		System.out.println(sumArray1(intArray));
 		System.out.println(sumArray2(intArray, intArray.length));

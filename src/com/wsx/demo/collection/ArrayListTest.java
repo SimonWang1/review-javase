@@ -16,7 +16,7 @@ public class ArrayListTest {
 		List<String> hero = new ArrayList<>();
 		hero.add("garren");
 		System.out.println(hero.size());
-		// ArrayList长度随着对象的增加自动增长
+		// ArrayList的元素个数即是容器长度
 		hero.add("teemo");
 		System.out.println(hero.size());
 	}
