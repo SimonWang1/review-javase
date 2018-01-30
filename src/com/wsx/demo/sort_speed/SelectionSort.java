@@ -1,4 +1,4 @@
-package com.wsx.sort_speed;
+package com.wsx.demo.sort_speed;
 
 public class SelectionSort implements Sort{
 	int[] numbers;

@@ -1,4 +1,4 @@
-package com.wsx.sort_speed;
+package com.wsx.demo.sort_speed;
 
 import java.util.Arrays;
 
