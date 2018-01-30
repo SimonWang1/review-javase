@@ -19,37 +19,37 @@ public class QuickSort {
 		int start = low;
 		// 结束元素索引
 		int end = high;
-		// 基准值索引
+		// 基准值
 		int pivot = a[low];
-		// 遍历数组，找到基准值位置
+		// 遍历数组找到pivot位置
 		while(end > start) {
-			// 从数组末尾向前比较，元素值大于基准值，结束元素索引左移
+			// 从数组末尾向前比较，元素值大于pivot，end左移
 			while(end > start && a[end] >= pivot)
 				end--;
-			// 如果元素值比基准值小，交换元素值，顺序执行循环体
+			// 如果元素值小于pivot，交换元素值
 			if(a[end] <= pivot) {
 				int temp = a[end];
 				a[end] = a[start];
 				a[start] = temp;
 			}
-			// 从数组开头向后比较，元素值小于基准值，起始元素索引右移
+			// 从数组开头向后比较，元素值小于pivot，start右移
 			while(end > start && a[start] <= pivot)
 				start++;
-			// 如果元素值比基准值大，交换元素值，返回开头执行循环体
+			// 如果元素值大于pivot，交换元素值
 			if(a[start] >= pivot) {
 				int temp = a[start];
 				a[start] = a[end];
 				a[end] = temp;
 			}
-			// 结束时基准值左侧小于基准值，右侧大于基准值
+			// 循环结束时start, end等于pivot index，pivot左侧为小值，右侧为大值
 		}
-		// 前半部分递归调用
+		// 左侧递归调用
 		if(start > low) 
-			// 数组起始元素索引到基准值前一个元素索引
+			// 范围：[start, pivot index - 1]
 			sort(a, low, start - 1);
-		// 后半部分递归调用
+		// 右侧递归调用
 		if(end < high) 
-			// 基准值后一个元素索引到数组结束元素索引
+			// 范围：[pivot index + 1, end]
 			sort(a, end + 1, high);
 	}
 }
