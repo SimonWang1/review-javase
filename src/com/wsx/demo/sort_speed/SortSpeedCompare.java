@@ -32,7 +32,7 @@ public class SortSpeedCompare {
 	}
 	
 	private static int[] performance(Sort algorithm, String type) {
-		Long start = System.currentTimeMillis();
+		long start = System.currentTimeMillis();
 		algorithm.sort();
 		int sortNumbers[] = algorithm.values();
 		long end = System.currentTimeMillis();
