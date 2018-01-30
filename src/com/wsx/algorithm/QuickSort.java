@@ -23,33 +23,35 @@ public class QuickSort {
 		int pivot = a[low];
 		// 遍历数组找到pivot位置
 		while(end > start) {
-			// 从数组末尾向前比较，元素值大于pivot，end左移
+			// 从数组末尾向前比较，end元素值大于pivot，end左移
 			while(end > start && a[end] >= pivot)
 				end--;
-			// 如果元素值小于pivot，交换元素值
+			// 如果end元素值小于pivot
 			if(a[end] <= pivot) {
+				// 交换，此时start元素值等于pivot
 				int temp = a[end];
 				a[end] = a[start];
 				a[start] = temp;
 			}
-			// 从数组开头向后比较，元素值小于pivot，start右移
+			// 从数组开头向后比较，start元素值小于pivot，start右移
 			while(end > start && a[start] <= pivot)
 				start++;
-			// 如果元素值大于pivot，交换元素值
+			// 如果start元素值大于pivot
 			if(a[start] >= pivot) {
+				// 交换，此时end元素值等于pivot
 				int temp = a[start];
 				a[start] = a[end];
 				a[end] = temp;
 			}
 			// 循环结束时start, end等于pivot index，pivot左侧为小值，右侧为大值
 		}
-		// 左侧递归调用
+		// 左侧递归调用，基线条件为start到达数组左侧
 		if(start > low) 
-			// 范围：[start, pivot index - 1]
+			// 递归条件，范围：[0, pivot index - 1]
 			sort(a, low, start - 1);
-		// 右侧递归调用
+		// 右侧递归调用，基线条件为end到达数组右侧
 		if(end < high) 
-			// 范围：[pivot index + 1, end]
+			// 递归条件，范围：[pivot index + 1, array.length - 1]
 			sort(a, end + 1, high);
 	}
 }
