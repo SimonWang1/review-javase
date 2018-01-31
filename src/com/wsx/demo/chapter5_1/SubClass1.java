@@ -18,10 +18,12 @@ public class SubClass1 extends BaseClass1{
 		System.out.println(bc.book);
 		bc.base();
 		bc.test();
+		System.out.println("------------------");
 		SubClass1 sc = new SubClass1();
 		System.out.println(sc.book);
 		sc.base();
 		sc.test();
+		System.out.println("------------------");
 		//编译时类型为父类，运行时类型为子类，可能出现多态
 		BaseClass1 ploymophicBc = new SubClass1();
 		//父子类都有的属性该引用指向父类

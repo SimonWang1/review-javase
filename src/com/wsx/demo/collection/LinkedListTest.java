@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 public class LinkedListTest {
 	public static void main(String[] args) {
-		// LinkedList基于双向链表结构
+		// LinkedList: 基于双向链表，查询慢，添加删除快，线程不安全
 		LinkedList<Hero> heros = new LinkedList<>();
 		// 可以方便的在头部和尾部插入数据
 		// 尾部插入数据

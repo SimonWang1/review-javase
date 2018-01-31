@@ -7,6 +7,7 @@ public class ArrayListTest1 {
 	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 		@SuppressWarnings("rawtypes")
+		// ArrayList: 基于数组，对比数组长度可变，查询快，添加删除慢，线程不安全
 		ArrayList heros = new ArrayList();
 		// add(element): 在ArrayList容器中添加5个元素
 		for(int i = 0; i < 5; i++) {
