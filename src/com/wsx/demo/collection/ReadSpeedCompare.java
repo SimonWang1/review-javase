@@ -58,7 +58,7 @@ public class ReadSpeedCompare {
 			}
 		}
 		long end = System.currentTimeMillis();
-		System.out.format("通过LinkedList查找，一共找到%d个英雄，耗时%d毫秒", result.size(),end - start);
+		System.out.format("通过LinkedList查找，一共找到%d个英雄，耗时%d 毫秒", result.size(),end - start);
 		return result;
 	}
 	
