@@ -27,7 +27,7 @@ public class ArrayListTest1 {
 //		System.out.println(heros.get(7));
 		// indexOf(element): 获取元素索引
 		System.out.println("Special hero's index: " + heros.indexOf(specialHero));
-		// remove(index): 删除索引为0和对象类型元素，
+		// remove(index): 删除索引为0和对象类型元素
 		heros.remove(0);
 		heros.remove(specialHero);
 		System.out.println(heros.toString());
