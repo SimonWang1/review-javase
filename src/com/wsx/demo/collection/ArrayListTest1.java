@@ -31,7 +31,7 @@ public class ArrayListTest1 {
 		heros.remove(0);
 		heros.remove(specialHero);
 		System.out.println(heros.toString());
-		// set(index, element): 替换指定索引的元素
+		// set(index, element): 修改指定索引的元素
 		heros.set(3, "last hero");
 		System.out.println(heros.toString());
 		// size(): 获取容器长度
