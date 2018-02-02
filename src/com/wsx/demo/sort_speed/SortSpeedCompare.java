@@ -11,7 +11,7 @@ public class SortSpeedCompare {
 		for(int i = 0; i < originalNums.length; i++) {
 			originalNums[i] = (int)(Math.random() * total);
 		}
-		System.out.format("初始化完毕%n接下来分别用3种算法进行排序。。%n");
+		System.out.format("初始化完毕%n开始算法进行排序...%n");
 		// 从初始化的数组中复制出来，保证排序算法操作的数组都是相同的
 		int[] useSort;
 		useSort = Arrays.copyOf(originalNums, originalNums.length);
@@ -20,7 +20,7 @@ public class SortSpeedCompare {
 		int[] sortedNumbersBySelectionSort = performance(new SelectionSort(useSort), "选择");
 		useSort = Arrays.copyOf(originalNums, originalNums.length);
 		int[] sortedNumbersByQuickSort = performance(new QuickSort(useSort), "快速");
-		System.out.println("查看排序结果，是否为不同对象");
+		System.out.println("查看排序结果，是否为不同对象：");
 		System.out.println(sortedNumbersByBubbleSort);
 		System.out.println(sortedNumbersBySelectionSort);
 		System.out.println(sortedNumbersByQuickSort);

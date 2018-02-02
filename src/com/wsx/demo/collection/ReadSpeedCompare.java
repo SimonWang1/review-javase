@@ -5,7 +5,7 @@ import java.util.*;
 public class ReadSpeedCompare {
 	public static void main(String[] args) {
 		List<Hero> hs = new ArrayList<>();
-		System.out.println("初始化开始。。");
+		System.out.println("数组初始化开始...");
 		for(int i = 0; i < 3000000; i++) {
 			Hero h = new Hero("Hero-" + random());
 			hs.add(h);
