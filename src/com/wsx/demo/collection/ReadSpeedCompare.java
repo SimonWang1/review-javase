@@ -3,6 +3,7 @@ package com.wsx.demo.collection;
 import java.util.*;
 
 public class ReadSpeedCompare {
+	// 比较Map和for循环的查询速度
 	public static void main(String[] args) {
 		List<Hero> hs = new ArrayList<>();
 		System.out.println("数组初始化开始...");

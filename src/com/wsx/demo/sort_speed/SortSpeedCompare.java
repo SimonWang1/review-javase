@@ -3,6 +3,7 @@ package com.wsx.demo.sort_speed;
 import java.util.Arrays;
 
 public class SortSpeedCompare {
+	// 排序算法速度比较
 	public static void main(String[] args) {
 		// 初始化随机数
 		int total = 40000;

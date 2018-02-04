@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class ArrayListTest2 {
+	// ArrayList循环遍历
 	public static void main(String[] args) {
 		List<Hero> heros = new ArrayList<>();
 		// 在ArrayList中添加5个元素

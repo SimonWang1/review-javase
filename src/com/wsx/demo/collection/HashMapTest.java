@@ -4,8 +4,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class HashMapTest {
+	// HashMap: 散列表键值对形式，键唯一，查询添加删除速度快，线程不安全
 	public static void main(String[] args) {
-		// HashMap: 散列表键值对形式，键唯一，查询添加删除速度快，线程不安全
 		Map<String, String> dictionary = new HashMap<>();
 		dictionary.put("adc", "physical hero");
 		dictionary.put("apc", "magic hero");

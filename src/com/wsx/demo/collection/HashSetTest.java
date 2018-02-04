@@ -5,8 +5,8 @@ import java.util.Iterator;
 import java.util.Set;
 
 public class HashSetTest {
+	// 本质是散列表的键，不允许重复，添加没有顺序，线程不安全
 	public static void main(String[] args) {
-		// 本质是散列表的键，不允许重复，添加没有顺序，线程不安全
 		Set<String> names = new HashSet<>();
 		names.add("gareen");
 		System.out.println(names);

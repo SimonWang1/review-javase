@@ -3,6 +3,7 @@ package com.wsx.demo.collection;
 import java.util.*;
 
 public class CollectionCompare {
+	// List和Set添加特性
 	public static void main(String[] args) {
 		List<Integer> numList = new ArrayList<>();
 		numList.add(3);

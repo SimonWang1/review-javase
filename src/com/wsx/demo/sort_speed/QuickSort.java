@@ -1,8 +1,8 @@
 package com.wsx.demo.sort_speed;
 
 public class QuickSort implements Sort{
-	int[] numbers;
 	// ¿ìËÙÅÅĞò
+	int[] numbers;
 	private static void quickSort(int[] numbers, int low, int high) {
 		int start = low;
 		int end = high;

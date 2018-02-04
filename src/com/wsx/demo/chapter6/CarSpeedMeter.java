@@ -1,6 +1,7 @@
 package com.wsx.demo.chapter6;
 
 public class CarSpeedMeter extends SpeedMeter{
+	// 实现抽象类，重写方法实现功能
 	public static void main(String[] args) {
 		CarSpeedMeter csm = new CarSpeedMeter();
 		csm.setTurnRate(15);

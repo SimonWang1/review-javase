@@ -5,8 +5,8 @@ import java.util.Collections;
 import java.util.List;
 
 public class CollectionsTest {
+	// Collections是集合的工具类，就像Arrays是数组的工具类
 	public static void main(String[] args) {
-		// Collections是集合的工具类，就像Arrays是数组的工具类
 		List<Integer> nums = new ArrayList<>();
 		for(int i = 0; i < 10; i++) {
 			nums.add(i);
@@ -14,7 +14,7 @@ public class CollectionsTest {
 		System.out.println("集合中的元素：");
 		System.out.println(nums);
 		// reverse(list): 反转
-		Collections.reverse(nums);;
+		Collections.reverse(nums);
 		System.out.println("反转后的元素：");
 		System.out.println(nums);
 		// shuffle(list): 混淆

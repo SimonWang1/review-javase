@@ -5,8 +5,8 @@ import java.util.List;
 import java.util.Queue;
 
 public class QueueTest {
+	// LinkedList实现了List接口，可以使用List声明引用类型，调用List方法
 	public static void main(String[] args) {
-		// LinkedList实现了List接口，可以使用List声明引用类型，调用List方法
 		List<Hero> ll = new LinkedList<>();
 		ll.add(new Hero("hero1"));
 		// LinkedList基于双向链表，实现了Deque双向队列，进而实现了Queue接口，

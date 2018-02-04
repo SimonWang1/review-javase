@@ -1,8 +1,8 @@
 package com.wsx.demo.sort_speed;
 
 public class SelectionSort implements Sort{
-	int[] numbers;
 	// —°‘Ò≈≈–Ú
+	int[] numbers;
 	@Override
 	public void sort() {
 		for(int i = 0; i < numbers.length; i++) {
