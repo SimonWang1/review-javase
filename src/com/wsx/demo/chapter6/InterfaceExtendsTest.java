@@ -15,7 +15,7 @@ interface interfaceC extends interfaceA, interfaceB{
 	void testC();
 }
 public class InterfaceExtendsTest {
-	//接口之间可以多继承，访问属性和方法
+	// 接口之间可以多继承，访问属性和方法
 	public static void main(String[] args) {
 		System.out.println(interfaceC.PROP_A);
 		System.out.println(interfaceC.PROP_B);

@@ -1,6 +1,7 @@
 package com.wsx.demo.chapter5_1;
 
 class Base{
+	// super调用父类构造器
 	public String name;
 	public double size;
 	//父类两参构造器

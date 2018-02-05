@@ -9,7 +9,7 @@ public class QueueTest {
 	public static void main(String[] args) {
 		List<Hero> ll = new LinkedList<>();
 		ll.add(new Hero("hero1"));
-		// LinkedList基于双向链表，实现了Deque双向队列，进而实现了Queue接口，
+		// LinkedList基于双向链表，实现了Deque双端队列，Deque继承Queue队列进而实现了Queue接口
 		// 队列先进先出，不能随机访问队列中的元素
 		Queue<Hero> q = new LinkedList<>();
 		// offer(Object): 在队列末尾添加元素

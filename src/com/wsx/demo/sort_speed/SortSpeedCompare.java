@@ -35,7 +35,7 @@ public class SortSpeedCompare {
 	private static int[] performance(Sort algorithm, String type) {
 		long start = System.currentTimeMillis();
 		algorithm.sort();
-		int sortNumbers[] = algorithm.values();
+		int[] sortNumbers = algorithm.values();
 		long end = System.currentTimeMillis();
 		System.out.format("%s≈≈–Ú£¨“ªπ≤∫ƒ ± %d ∫¡√Î%n", type, end - start);
 		return sortNumbers;
