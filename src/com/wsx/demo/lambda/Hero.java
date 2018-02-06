@@ -6,6 +6,10 @@ public class Hero implements Comparable<Hero>{
 	public float hp;
 	public int damage;
 	
+	public boolean matched() {
+		return this.hp > 100 && this.damage < 50;
+	}
+	
 	@Override
 	public int compareTo(Hero anotherHero) {
 		if(damage < anotherHero.damage)

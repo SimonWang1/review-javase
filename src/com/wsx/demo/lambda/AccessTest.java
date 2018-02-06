@@ -31,6 +31,10 @@ public class AccessTest {
 		System.out.println("使用对象方法：");
 		AccessTest accessTest = new AccessTest();
 		filter(heros, accessTest :: testHero2);
+		System.out.println("Lambda表达式中调用注入实体类对象的matched方法：");
+		filter(heros, h -> h.matched());
+		System.out.println("直接使用注入实体类声明方法：");
+		filter(heros, Hero :: matched);
 	}
 	
 	private static boolean testHero1(Hero h) {
