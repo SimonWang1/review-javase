@@ -1,8 +1,8 @@
 package com.wsx.algorithm;
 
 public class JJMul {
+	// 乘法表递归实现
 	public static void main(String[] args) {
-		// 普通乘法表
 		for(int i = 1; i <= 9; i++) {
 			for(int j = 1; j <= i; j ++) {
 				System.out.print(j + "*" + i + "=" + (i * j) + "\t");
@@ -12,7 +12,6 @@ public class JJMul {
 		JJMulDG(9);
 	}
 	
-	// 递归乘法表
 	public static void JJMulDG(int i) {
 		// 基线条件
 		if(i == 1) {
