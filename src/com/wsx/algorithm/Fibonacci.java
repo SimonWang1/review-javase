@@ -1,8 +1,9 @@
-package com.wsx.fibonaccisequence;
+package com.wsx.algorithm;
 
 import java.util.Scanner;
 
 public class Fibonacci {
+	// ì³²¨ÄÇÆõÊýÁÐ
 	public static void main(String[] args) {
 		while(true) {
 		@SuppressWarnings("resource")

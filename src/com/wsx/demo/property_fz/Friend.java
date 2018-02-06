@@ -4,6 +4,7 @@ import java.io.Serializable;
 
 @SuppressWarnings("serial")
 public class Friend implements Serializable{
+	// ·â×°demo
 	private String name;
 	private char sex;
 	private int age;

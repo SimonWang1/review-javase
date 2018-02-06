@@ -1,7 +1,7 @@
-package com.wsx.demo.constructor_overload;
+package com.wsx.demo.property_fz;
 
 public class Hero {
-	// 使用private修饰符封装属性
+	// 构造器重载
 	private String heroName;
 	private float heroHP;
 	private float heroArmer;

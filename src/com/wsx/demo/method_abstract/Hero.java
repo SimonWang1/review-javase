@@ -1,6 +1,7 @@
 package com.wsx.demo.method_abstract;
 
 public abstract class Hero {
+	// 使用抽象类实现多态
 	public String name;
 	public float HP;
 
@@ -8,7 +9,7 @@ public abstract class Hero {
 	public abstract void attack();
 
 	public static void main(String[] args) {
-		// 分别实例化并赋值
+		// 使用子类声明引用并赋值
 		ADHero ashe = new ADHero();
 		ashe.name = "Ashe";
 		APHero teemo = new APHero();

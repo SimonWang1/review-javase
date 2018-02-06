@@ -1,6 +1,7 @@
 package com.wsx.demo.method_overload;
 
 public class Support extends Hero{
+	// 方法重载，方法名相同，参数个数不同
 	public static void main(String[] args) {
 		Hero gl = new Hero();
 		Hero sj = new Hero();

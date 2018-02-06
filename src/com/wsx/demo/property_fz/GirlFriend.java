@@ -7,13 +7,13 @@ public class GirlFriend {
 		Friend jth = new Friend("加藤惠", '女', 19, 52, 165, "C", "黑长直");
 		System.out.println("new个对象出来");
 		// 使用对象引用调用get方法在控制台格式化打印输出
-		System.out.printf("Name: " + jth.getName() + "%nAge: " + jth.getAge() + "%nSex: " + jth.getSex() + "%nSize:"
+		System.out.format("Name: " + jth.getName() + "%nAge: " + jth.getAge() + "%nSex: " + jth.getSex() + "%nSize:"
 				+ jth.getSize() + "%nWeight: " + jth.getWeight() + "%nHeight: " + jth.getHeight() + "%nProperty: "
 				+ jth.getProperty() + "%n");
 		System.out.println("先有圣人有有天，我惠美如画中仙！");
 		System.out.println("*********************************************");
 		Friend xyjy = new Friend("新垣结衣", '女', 1988, 49, 169, "D", "我老婆");
-		System.out.printf("Name: " + xyjy.getName() + "%nAge: " + xyjy.getAge() + "%nSex:" + xyjy.getSex() + "%nSize: "
+		System.out.format("Name: " + xyjy.getName() + "%nAge: " + xyjy.getAge() + "%nSex:" + xyjy.getSex() + "%nSize: "
 				+ xyjy.getSize() + "%nWeight: " + xyjy.getWeight() + "%nHeight: " + xyjy.getHeight() + "%nProperty: "
 				+ xyjy.getProperty() + "%n");
 	}

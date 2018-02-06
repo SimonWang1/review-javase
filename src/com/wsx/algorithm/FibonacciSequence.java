@@ -1,8 +1,9 @@
-package com.wsx.fibonaccisequence;
+package com.wsx.algorithm;
 
 import java.util.Scanner;
 
 public class FibonacciSequence {
+	// 递归实现斐波那契
 	public static void main(String[] args) {
 		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
@@ -11,7 +12,6 @@ public class FibonacciSequence {
 		System.out.println("F(" + i + ") = " + Fibonacci(i));
 	}
 
-	// 斐波那契递归
 	public static int Fibonacci(int n) {
 		// 基线条件
 		if (n == 0) {
