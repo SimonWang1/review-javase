@@ -18,7 +18,7 @@ public abstract class Hero {
 		caitlyn.name = "Caitlyn";
 		System.out.printf("AD hero name: " + ashe.name + "%nAP hero name: " + teemo.name + "%nADAP hero name: "
 				+ caitlyn.name + "%n");
-		// 多态，调用相同方法，呈现不同形态
+		// 多态，调用相同方法，实现不同的效果
 		ashe.attack();
 		teemo.attack();
 		caitlyn.physicAttack();

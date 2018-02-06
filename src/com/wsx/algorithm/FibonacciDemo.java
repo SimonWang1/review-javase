@@ -2,8 +2,8 @@ package com.wsx.algorithm;
 
 import java.util.Scanner;
 
-public class FibonacciSequence {
-	// 递归实现斐波那契
+public class FibonacciDemo {
+	// 递归实现斐波那契数列
 	public static void main(String[] args) {
 		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);

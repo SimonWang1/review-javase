@@ -5,10 +5,10 @@ public class Hero {
 	public float HP;
 
 	public static void main(String[] args) {
-		// 在父类创建对象时引用类型可以和对象类型不同
+		// 使用父类声明引用类型只能访问父类定义的方法
 		Hero gareen = new ADHero();
 		gareen.heroName = "gareen";
-		// 创建子类对象时引用类型和对象类型要相同
+		// 使用子类声明引用类型可以访问子类的所有方法
 		ADHero ashe = new ADHero();
 		ashe.heroName = "Ashe";
 		APHero teemo = new APHero();
@@ -20,6 +20,7 @@ public class Hero {
 		gareen.kill(caitlyn);
 	}
 
+	// 形参注入接口，实现多态
 	public void kill(Mortal m) {
 		System.out.println(heroName + " used skill 'R'");
 		m.die();

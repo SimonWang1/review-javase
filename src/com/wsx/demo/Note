@@ -39,10 +39,17 @@ HashSet: 本质是散列表的键，不允许重复，添加没有顺序，线程不安全
 HashMap: 散列表键值对形式，键唯一，查询添加删除速度快，线程不安全
 HashTable: 与HashMap基本相同，不能存放null，线程安全
 
-TreeSet: 
-LinkedHashSet:
-TreeMap: 
-LinkedHashMap: 
+TreeSet: 自动排序
+LinkedHashSet: 按照添加排序
+TreeMap: 自动按键排序
+LinkedHashMap: 按照添加排序
+
+函数式初级：
+Lambda表达式是匿名方法的简写，使代码更加简洁，编译时虚拟机当做匿名方法处理
+优点：
+快速创建接口对象，当使用接口做参数时，使用Lambda表达式可以方便的进行传参，代码简洁
+缺点：
+当Lambda表达式较长时可读性差，调试困难，不向上兼容
 
 学习数据结构，主攻HashMap，ArrayList，LinkedList。
 学习排序算法，主攻快速排序（速度最快），归并排序（Hadoop）。
