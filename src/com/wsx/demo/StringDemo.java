@@ -3,6 +3,7 @@ package com.wsx.demo;
 import java.util.Scanner;
 
 public class StringDemo {
+	// String∏Ò ΩªØ
 	public static void main(String[] args) {
 		@SuppressWarnings("resource")
 		Scanner sc = new Scanner(System.in);

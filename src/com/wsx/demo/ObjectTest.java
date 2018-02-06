@@ -1,6 +1,7 @@
 package com.wsx.demo;
 
 public class ObjectTest extends Object {
+	// 重写Object类的方法
 	public String name;
 	public int price;
 

@@ -1,6 +1,7 @@
 package com.wsx.demo;
 
 public class SequenceTest {
+	// Ö´ÐÐË³Ðò
 	static {
 		SequenceTest.getName("¾²Ì¬´úÂë»¯¿é");
 	}

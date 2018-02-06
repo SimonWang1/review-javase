@@ -1,6 +1,7 @@
 package com.wsx.demo;
 
 class Root {
+	// 执行顺序
 	static {
 		System.out.println("Root的静态初始化块");
 	}

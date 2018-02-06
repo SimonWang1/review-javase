@@ -1,7 +1,7 @@
 package com.wsx.singleton;
 
-// Enum
 public enum Singleton5 {
+	// Enum
 	INSTANCE;
 	private String name;
 

@@ -1,6 +1,7 @@
 package com.wsx.demo;
 
 public class StringBufferTest {
+	// 对象引用指向内存
 	public static void main(String[] args) {
 		StringBuffer sb = new StringBuffer("Iphone");
 		StringBuffer sb2 = new StringBuffer("Iphone");

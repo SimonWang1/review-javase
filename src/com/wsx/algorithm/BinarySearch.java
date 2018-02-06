@@ -2,12 +2,12 @@ package com.wsx.algorithm;
 
 public class BinarySearch {
 	public static void main(String[] args) {
+		// 二分法查找
 		int[] intArray = { 1, 3, 5, 7, 9 };
 		binarySearch(intArray, 7);
 		binarySearch(intArray, 10);
 	}
 
-	// 二分法查找
 	public static void binarySearch(int[] intArray, int item) {
 		// 数组最小值下标
 		int low = 0;

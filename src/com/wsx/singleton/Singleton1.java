@@ -1,7 +1,7 @@
 package com.wsx.singleton;
 
-// Simple
 public class Singleton1 {
+	// Simple
 	public static void main(String[] args) {
 		Singleton1 s1, s2;
 		s1 = Singleton1.getSingleton1();

@@ -1,7 +1,7 @@
 package com.wsx.singleton;
 
-// Double Checked Locking
 public class Singleton3 {
+	// Double Checked Locking
 	public static void main(String[] args) {
 		Singleton3 s1, s2;
 		s1 = Singleton3.getSingleton3();

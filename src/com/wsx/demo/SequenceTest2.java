@@ -1,6 +1,7 @@
 package com.wsx.demo;
 
 public class SequenceTest2 {
+	// 执行顺序
 	static int a = 1;
 	static {
 		// 重新赋值父类全局变量

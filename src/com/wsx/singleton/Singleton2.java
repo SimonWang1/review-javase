@@ -1,7 +1,7 @@
 package com.wsx.singleton;
 
-// 语义线程安全
 public class Singleton2 {
+	// 语义线程安全
 	public static void main(String[] args) {
 		Singleton2 s1, s2;
 		s2 = Singleton2.getSingleton2();
