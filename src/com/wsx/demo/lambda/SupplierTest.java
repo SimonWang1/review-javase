@@ -5,10 +5,10 @@ import java.util.List;
 import java.util.function.Supplier;
 
 public class SupplierTest {
-	// Supplier三种方式调用方式
+	// Supplier方法调用
 	@SuppressWarnings({ "rawtypes", "unused" })
 	public static void main(String[] args) {
-		// Supplier接口方法中内置了返回对象
+		// Supplier接口方法中内置了抽象方法
 		Supplier<List> s = new Supplier<List>() {
 			@Override
 			public List get() {
