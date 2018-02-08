@@ -90,7 +90,7 @@ HTTP（超文本传输协议）：基于TCP/IP的应用层协议，用于浏览器和服务器之间的通信。
 GET速度快，在URL使用明文传输，POST速度较慢相对安全，适合传输密码验证登录等功能。
 FTP（文件传输协议）：基于TCP/IP的应用层协议，用于文件传输，速度快。
 HTTPS（超文本传输安全协议）：使用SSL加密属于安全协议。
-Socket：对TCP/IP协议族的封装，是编程语言接口不是协议，属于长连接。
+Socket：对TCP/IP协议的封装，是编程语言接口不是协议，属于长连接。
 域名：类似"http://www.eclipse.org/"，与IP地址结合用于被DNS（域名系统）服务器识别。
 
 学习数据结构，主攻HashMap，ArrayList，LinkedList。
