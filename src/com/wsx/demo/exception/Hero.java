@@ -7,7 +7,7 @@ public class Hero {
 	
 	public void attackHero(Hero h) throws DefinedException{
 		if(h.hp == 0) {
-			throw new DefinedException(h.name + "该英雄被击杀，不用释放技能");
+			throw new DefinedException(h.name + "英雄被击杀，不用释放技能");
 		}
 	}
 	
