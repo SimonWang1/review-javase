@@ -11,9 +11,9 @@ public class ManyException1 {
 	// 多异常捕捉1
 	@SuppressWarnings({ "resource", "unused" })
 	public static void main(String[] args) {
-		File f = new File("d:\\stream.txt");
+		File f = new File("d:/stream.txt");
 		try {
-			System.out.println("试图打开d:\\stream.txt");
+			System.out.println("试图打开d:/stream.txt");
 			new FileInputStream(f);
 			System.out.println("成功打开");
 			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-mm-dd");

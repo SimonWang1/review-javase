@@ -8,9 +8,9 @@ public class FinallyTest {
 	// finally代码块
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
-		File f = new File("d:\\stream.txt");
+		File f = new File("d:/stream.txt");
 		try {
-			System.out.println("试图打开 d:\\stream.txt");
+			System.out.println("试图打开 d:/stream.txt");
 			new FileInputStream(f);
 			System.out.println("成功打开");
 		}

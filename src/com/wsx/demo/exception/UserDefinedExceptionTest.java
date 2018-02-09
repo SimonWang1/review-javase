@@ -1,6 +1,6 @@
 package com.wsx.demo.exception;
 
-public class DefinedExceptionTest {
+public class UserDefinedExceptionTest {
 	// 自定义异常测试
 	public static void main(String[] args) {
 		Hero gareen = new Hero();
@@ -11,7 +11,7 @@ public class DefinedExceptionTest {
 		teemo.hp = 0;
 		try {
 			gareen.attackHero(teemo);
-		} catch (DefinedException e) {
+		} catch (UserDefinedException e) {
 			System.out.println("异常具体原因：" + e.getMessage());
 			e.printStackTrace();
 		}

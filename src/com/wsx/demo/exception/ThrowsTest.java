@@ -23,8 +23,8 @@ public class ThrowsTest {
 	// method2抛出文件未找到异常
 	@SuppressWarnings("resource")
 	private static void method2() throws FileNotFoundException{
-		File f = new File("d:\\stream.txt");
-		System.out.println("试图打开 d:\\stream.txt");
+		File f = new File("d:/stream.txt");
+		System.out.println("试图打开 d:/stream.txt");
 		new FileInputStream(f);
 		System.out.println("成功打开");
 	}

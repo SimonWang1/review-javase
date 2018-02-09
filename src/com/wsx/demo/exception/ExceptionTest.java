@@ -8,10 +8,10 @@ public class ExceptionTest {
 	// try catch捕获处理文件不存在异常
 	@SuppressWarnings("resource")
 	public static void main(String[] args) {
-		File f = new File("d:\\stream.txt");
+		File f = new File("d:/stream.txt");
 		try {
 			// 可查异常需要进行try catch或throws操作，否则编译器不允许执行
-			System.out.println("试图打开 d:\\stream.txt");
+			System.out.println("试图打开 d:/stream.txt");
 			new FileInputStream(f);
 			System.out.println("成功打开");
 		}
