@@ -5,13 +5,15 @@ import java.util.Scanner;
 public class FibonacciDemo {
 	// 递归实现斐波那契数列
 	public static void main(String[] args) {
+		while(true) {
 		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);
 		System.out.print("Enter a value of n：");
 		int i = scan.nextInt();
 		System.out.println("F(" + i + ") = " + Fibonacci(i));
+		}
 	}
-
+	
 	public static int Fibonacci(int n) {
 		// 基线条件
 		if (n == 0) {
