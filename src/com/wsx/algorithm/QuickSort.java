@@ -26,7 +26,7 @@ public class QuickSort {
 			// 从数组末尾向前比较，end元素值大于pivot，end左移
 			while(end > start && a[end] >= pivot)
 				end--;
-			// 如果end元素值小于pivot
+			// 当end元素值小于pivot
 			if(a[end] <= pivot) {
 				// 交换，此时start元素值等于pivot
 				int temp = a[end];
@@ -36,7 +36,7 @@ public class QuickSort {
 			// 从数组开头向后比较，start元素值小于pivot，start右移
 			while(end > start && a[start] <= pivot)
 				start++;
-			// 如果start元素值大于pivot
+			// 当start元素值大于pivot
 			if(a[start] >= pivot) {
 				// 交换，此时end元素值等于pivot
 				int temp = a[start];

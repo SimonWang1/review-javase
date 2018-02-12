@@ -13,11 +13,11 @@ public class SumArray {
 			3 + sumArray2(intArray, 2)
 			2 + sumArray2(intArray, 1)
 			1 + sumArray2(intArray, 0)
-			1 + 0
-			1 + 2 = 3
+			1 + 0 = 1	--> 到达基线条件，此时栈顶值为0
+			2 + 1 = 3
 			3 + 3 = 6
-			6 + 4 = 10
-			10 +5 = 15
+			4 + 6 = 10
+			5 + 10 = 15
 		*/
 	}
 	

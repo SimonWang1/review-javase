@@ -12,6 +12,17 @@ public class Factorial {
 			int num = scan.nextInt();
 			System.out.println("普通阶乘值为：" + mul(num));
 			System.out.println("递归阶乘值为：" + mul(num));
+			/*
+				假设输入5，栈内存递归调用过程
+				5 * mul1(4)
+				4 * mul1(3)
+				3 * mul1(2)
+				2 * mul1(1)
+				2 * 1 = 2	-->	到达基线条件，此时栈顶值为1
+				3 * 2 = 6
+				4 * 6 = 24
+				5 * 24 = 120
+			*/
 		}
 	}
 	
