@@ -2,7 +2,7 @@ package com.wsx.demo.stream;
 
 import java.io.File;
 
-public class FindFile1 {
+public class FindFileDemo1 {
 	// 使用递归查找指定文件夹包含子文件夹的最大最小文件
 	static long minSize = Integer.MAX_VALUE;
 	static long maxSize = 0;
