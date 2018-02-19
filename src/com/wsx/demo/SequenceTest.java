@@ -7,6 +7,7 @@ public class SequenceTest {
 	}
 
 	public String name = SequenceTest.getName("属性声明");
+	
 	{
 		SequenceTest.getName("普通初始化块");
 	}
