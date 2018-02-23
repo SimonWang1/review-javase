@@ -1,13 +1,12 @@
 package com.wsx.demo.chapter4;
 
 public class PirmitiveArrayTest {
+	// 动态初始化
 	public static void main(String[] args) {
-		// 动态初始化
-		int[] iArr;
-		iArr = new int[5];
-		for (int i = 0; i < iArr.length; i++) {
-			iArr[i] = i + 10;
-			System.out.println(iArr[i]);
+		int[] intArray = new int[5];
+		for (int i = 0; i < intArray.length; i++) {
+			intArray[i] = i;
+			System.out.println(intArray[i]);
 		}
 	}
 }

@@ -1,6 +1,7 @@
 package com.wsx.demo.chapter4;
 
 public class ReturnTest {
+	// return实现break效果
 	public static void main(String[] args){
 		for(int i = 0; i < 5;i++){
 			System.out.println("i的值：" + i);

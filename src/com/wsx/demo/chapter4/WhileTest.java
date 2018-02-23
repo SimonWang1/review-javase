@@ -1,6 +1,7 @@
 package com.wsx.demo.chapter4;
 
 public class WhileTest {
+	// while—≠ª∑
 	public static void main(String[] args) {
 		int num = 0;
 		while (num <= 5) {

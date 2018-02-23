@@ -1,6 +1,7 @@
 package com.wsx.demo.chapter4;
 
 public class ForInsteadWhile {
+	// For循环取代while循环
 	public static void main(String[] args) {
 		int count = 0;
 		for (; count < 10;) {
@@ -13,6 +14,5 @@ public class ForInsteadWhile {
 			tmp = i;
 		}
 		System.out.println("循环2结束" + tmp);
-		
 	}
 }

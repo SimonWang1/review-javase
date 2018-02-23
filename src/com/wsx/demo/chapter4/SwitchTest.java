@@ -1,6 +1,7 @@
 package com.wsx.demo.chapter4;
 
 public class SwitchTest {
+	// Switch≈–∂œ
 	public static void main(String[] args) {
 		char score = 'b';
 		switch (score) {
