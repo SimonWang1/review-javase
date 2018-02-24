@@ -5,7 +5,7 @@ public class ForErrorTest {
 	public static void main(String[] args){
 		for(int count = 0; count < 10; count++){
 			System.out.println(count);
-			// 整形运算结果为0
+			// 变量声明为int类型只保留整数，结果为零
 			count *= 0.1;
 		}
 		System.out.println("循环结束");
