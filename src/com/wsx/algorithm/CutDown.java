@@ -3,18 +3,17 @@ package com.wsx.algorithm;
 public class CutDown {
 	// 简单递归
 	public static void main(String[] args) {
-		cutDown(3);
+		cutDown(5);
 	}
 
 	public static int cutDown(int i) {
-		System.out.println(i);
 		// 基线条件
-		if (i <= 0) {
-			return i;
+		if(i <= 1) {
+			return 1;
 		}
 		// 递归条件
 		else {
-			cutDown(i - 1);
+			System.out.println(cutDown(i - 1));
 			return i;
 		}
 	}

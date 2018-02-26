@@ -1,7 +1,7 @@
 package com.wsx.algorithm;
 
 public class Greet {
-	// 调用栈：栈主要用来存放栈帧，对栈帧的压入和弹出操作称为调用栈
+	// 调用栈
 	public static void main(String[] args) {
 		// 调用greet方法，在栈帧存储局部变量
 		greet("jackson");
