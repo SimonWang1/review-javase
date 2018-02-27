@@ -10,4 +10,8 @@ public class Person {
 	public void say(String content) {
 		System.out.println(content);
 	}
+	
+	public Person() {
+		
+	}
 }
