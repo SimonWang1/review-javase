@@ -7,13 +7,14 @@ class Bird {
 	}
 }
 
-public class Ostrish extends Bird{
+public class Ostrich extends Bird {
+	// 方法重写
 	public static void main(String[] args) {
-		Ostrish os = new Ostrish();
-		//执行子类方法
+		Ostrich os = new Ostrich();
+		// 执行子类方法
 		os.fly();
 	}
-	
+
 	public void fly() {
 		System.out.println("I can only run on the ground...");
 	}
