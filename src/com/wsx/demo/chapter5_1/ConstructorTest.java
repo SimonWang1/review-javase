@@ -14,7 +14,7 @@ public class ConstructorTest {
 
 	// 提供两个参数的构造器
 	public ConstructorTest(String name, int count) {
-		// 构造器中的this代表初始化对象
+		// 构造器中的this代表当前对象
 		this.name = name;
 		this.count = count;
 	}

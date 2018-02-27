@@ -1,7 +1,7 @@
 package com.wsx.demo.property_fz;
 
 public class Hero {
-	// 构造器重载
+	// 实体类
 	private String heroName;
 	private float heroHP;
 	private float heroArmer;

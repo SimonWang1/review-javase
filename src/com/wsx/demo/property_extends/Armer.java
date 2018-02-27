@@ -1,7 +1,7 @@
 package com.wsx.demo.property_extends;
 
 public class Armer extends Item{
-	// 继承demo
+	// 继承实现代码复用
 	public int ac;
 	public static void main(String[] args) {
 		// 子类可以直接调用父类声明的属性并拓展功能，多用于拓展接口

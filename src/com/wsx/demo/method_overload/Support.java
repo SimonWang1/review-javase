@@ -4,10 +4,10 @@ public class Support extends Hero{
 	// 方法重载，方法名相同，参数个数不同
 	public static void main(String[] args) {
 		Hero gl = new Hero();
-		Hero sj = new Hero();
-		Support slk = new Support();
-		sj.name = "赏金";
 		gl.name = "盖伦";
+		Hero sj = new Hero();
+		sj.name = "赏金";
+		Support slk = new Support();
 		slk.name = "索拉卡";
 		slk.heal();
 		slk.heal(sj);
