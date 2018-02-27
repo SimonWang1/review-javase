@@ -1,13 +1,13 @@
 package com.wsx.demo.chapter5;
 
 public class MethodLocalVariableTest {
+	// 方法内的变量为局部变量，需要指向堆内存内容
 	public static void main(String[] args) {
-		//定义方法局部变量a
+		// 声明方法局部变量a
 		int a;
-		//
-//		System.out.println("方法局部变量a的值" + a);
+		// System.out.println("方法局部变量a的值" + a);
 		a = 5;
-		//局部变量存储在栈中需要指向堆内存即赋值操作，否则抛出未初始化异常
+		// 局部变量存储在栈中，需要指向堆内存即赋值，否则报错
 		System.out.println("方法局部变量a的值" + a);
 	}
 }

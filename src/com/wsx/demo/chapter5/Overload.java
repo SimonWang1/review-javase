@@ -1,10 +1,11 @@
 package com.wsx.demo.chapter5;
 
 public class Overload {
+	// 方法重载，方法相同，形参个数不同
 	public static void main(String[] args) {
 		Overload ol = new Overload();
 		ol.test();
-		ol.test("Hello man");
+		ol.test("Hey, guys");
 	}
 	
 	public void test() {

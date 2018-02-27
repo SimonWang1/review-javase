@@ -1,6 +1,7 @@
 package com.wsx.demo.chapter5;
 
 public class PersonTest {
+	// POJO≤‚ ‘
 	public static void main(String[] args) {
 		Person wsx = new Person();
 		wsx.name = "Wangsx";
