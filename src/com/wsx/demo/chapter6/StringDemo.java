@@ -1,4 +1,4 @@
-package com.wsx.demo;
+package com.wsx.demo.chapter6;
 
 import java.util.Scanner;
 

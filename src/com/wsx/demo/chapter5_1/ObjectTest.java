@@ -1,4 +1,4 @@
-package com.wsx.demo;
+package com.wsx.demo.chapter5_1;
 
 public class ObjectTest extends Object {
 	// 重写Object类的方法

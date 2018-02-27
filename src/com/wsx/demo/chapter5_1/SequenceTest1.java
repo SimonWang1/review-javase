@@ -1,7 +1,7 @@
-package com.wsx.demo;
+package com.wsx.demo.chapter5_1;
 
 class Root {
-	// 执行顺序
+	// 间接父类
 	static {
 		System.out.println("Root的静态初始化块");
 	}
@@ -16,6 +16,7 @@ class Root {
 }
 
 class Mid extends Root {
+	// 父类
 	static {
 		System.out.println("Mid的静态初始化快");
 	}
@@ -25,7 +26,7 @@ class Mid extends Root {
 	}
 
 	public Mid(String msg) {
-		// 通过this调用同一类中重载的构造器
+		// 调用重载构造器
 		this();
 		System.out.println("Mid的带参构造器，参数值为：" + msg);
 	}
@@ -36,6 +37,7 @@ class Mid extends Root {
 }
 
 class Leaf extends Mid {
+	// 子类
 	static {
 		System.out.println("Leaf的静态初始化块");
 	}
@@ -45,16 +47,16 @@ class Leaf extends Mid {
 	}
 
 	public Leaf() {
-		// 通过super调用父类中有一个字符串参数的构造器
+		// 调用父类带参构造器
 		super("Java编程思想");
 		System.out.println("Leaf的无参构造器");
 	}
 }
 
 public class SequenceTest1 {
+	// 执行顺序
 	public static void main(String[] args) {
-		// 在无继承关系的方法中创建对象，主方法内容执行顺序不变
-		// 创建对象的执行顺序依次为（父类→子类）静态代码块，普通初始化块，无参构造器，带参构造器
+		// 执行顺序从上到下优先执行静态代码块，再依次执行普通初始化块，无参构造器，带参构造器
 		new Leaf();
 		System.out.println("********************");
 		// 静态代码块仅执行一次

@@ -1,4 +1,4 @@
-package com.wsx.demo;
+package com.wsx.demo.chapter6;
 
 public class StringTest {
 	public static void main(String[] args) {

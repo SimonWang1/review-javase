@@ -1,4 +1,4 @@
-package com.wsx.demo;
+package com.wsx.demo.chapter6;
 
 public class StringBufferTest {
 	// 对象引用指向内存

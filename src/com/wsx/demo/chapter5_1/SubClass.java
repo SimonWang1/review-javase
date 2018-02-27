@@ -1,18 +1,22 @@
 package com.wsx.demo.chapter5_1;
 
 class BaseClass {
-	// super访问父类属性
+	// 父类
 	public int a = 5;
 }
 
 public class SubClass extends BaseClass{
+	// super访问父类属性
 	// 子类重写父类属性a
 	public int a = 7;
 	public static void main(String[] args) {
 		SubClass sc = new SubClass();
 		sc.accessOwner();
 		sc.accessBase();
-		// 父类引用指向子类构造器，访问父类属性
+		System.out.println("----------");
+		// 子类引用指向子类对象没有多态，访问子类属性
+		System.out.println(sc.a);
+		// 父类引用指向子类对象发生多态，访问父类属性
 		BaseClass bc = new SubClass();
 		System.out.println(bc.a);
 	}
