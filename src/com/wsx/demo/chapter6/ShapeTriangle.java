@@ -1,17 +1,15 @@
 package com.wsx.demo.chapter6;
 
-public class Triangle extends Shape{
-	//定义三角形的边
+public class ShapeTriangle extends Shape {
+	// 三角形周长
+	// 封装边长
 	private double a;
 	private double b;
 	private double c;
-	public Triangle(String color, double a, double b, double c) {
-		super(color);
-		this.setSides(a, b ,c);
-	}
-	
+
+	// 边长赋值
 	public void setSides(double a, double b, double c) {
-		if(a >= b + c || b >= a + c || c >= a + b) {
+		if (a >= b + c || b >= a + c || c >= a + b) {
 			System.out.println("三角形两边之和必须大于第三边");
 			return;
 		}
@@ -19,19 +17,25 @@ public class Triangle extends Shape{
 		this.b = b;
 		this.c = c;
 	}
-	
-	//重写计算周长的抽象方法
+
+	// 计算周长
 	@Override
 	public double calPerimeter() {
 		// TODO Auto-generated method stub
 		return a + b + c;
 	}
 
-	//重写Shape类返回形状的抽象方法
+	// 形状
 	@Override
 	public String getType() {
 		// TODO Auto-generated method stub
 		return getColor() + " Triangle";
 	}
 	
+	// 带参调用
+	public ShapeTriangle(String color, double a, double b, double c) {
+		super(color);
+		this.setSides(a, b, c);
+	}
 }
+
