@@ -1,6 +1,7 @@
 package com.wsx.demo.method_abstract;
 
 public class ADHero extends Hero implements AD{
+	// ŒÔ¿Ì”¢–€
 	@Override
 	public void attack() {
 		physicAttack();

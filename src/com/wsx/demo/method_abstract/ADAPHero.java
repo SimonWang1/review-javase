@@ -1,10 +1,12 @@
 package com.wsx.demo.method_abstract;
 
-// 单继承多实现
 public class ADAPHero extends Hero implements AD, AP {
+	// 单继承多实现
+	// 混合系英雄
 	@Override
 	public void attack() {
-		System.out.println(this.name + " used physic and magic attack");
+		physicAttack();
+		magicAttack();
 	}
 
 	@Override

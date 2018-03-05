@@ -1,6 +1,7 @@
 package com.wsx.demo.method_abstract;
 
 public class APHero extends Hero implements AP{
+	// Ä§·¨Ó¢ÐÛ
 	@Override
 	public void attack() {
 		magicAttack();
