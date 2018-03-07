@@ -1,6 +1,7 @@
 package com.wsx.demo.collection;
 
 public class Hero {
+	// ΚµΜεΐΰ
 	public String name;
 	public float hp;
 	public int damage;

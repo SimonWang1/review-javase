@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Random;
 
 public class ComparableTest {
+	// 集合注入实现Comparable的实体类进行排序
 	public static void main(String[] args) {
 		Random r = new Random();
 		List<HeroB> heros = new ArrayList<>();

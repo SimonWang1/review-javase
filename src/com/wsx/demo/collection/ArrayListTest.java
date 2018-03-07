@@ -4,12 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class ArrayListTest {
+	// ArrayList: 基于可增长数组，查询快，添加删除慢，线程不安全。
 	public static void main(String[] args) {
+		// 使用数组容易造成内存浪费和长度限制
 		Hero[] heros = new Hero[5];
-		// 使用数组容易造成内存浪费和长度限制，索引超出数组长度会报错
 		heros[0] = new Hero("teemo");
-//		heros[20] = new Hero("gareen");
-		for(Hero hero : heros) {
+		// 索引超出数组长度会报错
+		// heros[20] = new Hero("gareen");
+		for (Hero hero : heros) {
 			System.out.println(hero);
 		}
 		// 创建容器类ArrayList，用于存放对象

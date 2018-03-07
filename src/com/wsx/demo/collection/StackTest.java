@@ -2,11 +2,11 @@ package com.wsx.demo.collection;
 
 import java.util.LinkedList;
 
-public class HeroStack {
-	// 泛型限制注入类型，通过LinkedList实现栈效果
+public class StackTest {
+	// 通过LinkedList实现栈先进后出
 	LinkedList<Hero> heros = new LinkedList<>();
 	public static void main(String[] args) {
-		HeroStack heroStack = new HeroStack();
+		StackTest heroStack = new StackTest();
 		for(int i = 0; i < 5; i++) {
 			Hero h = new Hero("Hero name " + i);
 			System.out.println("压入Hero: " + h.name);
@@ -20,15 +20,21 @@ public class HeroStack {
 		}
 	}
 	
+	// 压栈
 	public void push(Hero h) {
+		// 队尾插入数据
 		heros.addLast(h);
 	}
 	
+	// 出栈
 	public Hero pull() {
+		// 移除队尾数据
 		return heros.removeLast();
 	}
 	
+	// 查看栈顶元素
 	public Hero peek() {
+		// 获取队尾数据
 		return heros.getLast();
 	}
 }

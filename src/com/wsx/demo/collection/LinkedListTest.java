@@ -11,10 +11,11 @@ public class LinkedListTest {
 		heros.addLast(new Hero("hero1"));
 		heros.addLast(new Hero("hero2"));
 		heros.addLast(new Hero("hero3"));
-		System.out.println(heros.toString());
+		System.out.println(heros);
 		// 头部插入数据
 		heros.addFirst(new Hero("hero0"));
-		System.out.println(heros.toString());
+		// 双向链表前后存储下一个元素的地址
+		System.out.println(heros);
 		// 查看最前数据
 		System.out.println(heros.getFirst());
 		// 查看最后数据
@@ -23,6 +24,6 @@ public class LinkedListTest {
 		heros.removeFirst();
 		// 移除最后数据
 		heros.removeLast();
-		System.out.println(heros.toString());
+		System.out.println(heros);
 	}
 }

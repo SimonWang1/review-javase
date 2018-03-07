@@ -1,7 +1,7 @@
 package com.wsx.demo.collection;
 
 public class HeroB implements Comparable<HeroB>{
-	// 实现比较接口，重写比较方法
+	// 实体类B实现Comparable接口，重写比较方法
 	public String name;
 	public float hp;
 	public int damage;
@@ -13,12 +13,14 @@ public class HeroB implements Comparable<HeroB>{
 			return -1;
 	}
 	
+	// 三参构造器
 	public HeroB(String name, float hp, int damage) {
 		this.name = name;
 		this.hp = hp;
 		this.damage = damage;
 	}
 	
+	// 带参构造器
 	public HeroB(String name) {
 		this.name = name;
 	}

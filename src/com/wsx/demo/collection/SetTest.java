@@ -6,7 +6,7 @@ import java.util.Set;
 import java.util.TreeSet;
 
 public class SetTest {
-	// HashSet, TreeSet, LinkedHashSet compare
+	// HashSet, TreeSet, LinkedHashSet添加顺序比较
 	public static void main(String[] args) {
 		// HashSet添加无顺序
 		Set<Integer> numSet1 = new HashSet<>();

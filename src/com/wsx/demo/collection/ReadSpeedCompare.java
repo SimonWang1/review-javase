@@ -47,7 +47,7 @@ public class ReadSpeedCompare {
 		System.out.format("使用for循环查找，一共找到%d 个英雄，耗时%d 毫秒", result.size(), end - start);
 		return result;
 	}
-		
+	
 	private static int random() {
 		int random = (int) (Math.random() * 9000) + 1000;
 		return random;

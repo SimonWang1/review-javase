@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Random;
 
 public class ComparatorTest {
+	// 集合注入未实现Comparable的实体类进行排序
 	public static void main(String[] args) {
 		// 比较器
 		Random r = new Random();
