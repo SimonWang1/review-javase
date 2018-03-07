@@ -17,30 +17,29 @@ public class ReadSpeedCompare2 {
 		modify(list, "LinkedList");
 	}
 	
-	private static void insertFirst(List<Integer> l, String type) {
+	private static void insertFirst(List<Integer> list, String type) {
 		int total = 1000 * 100;
 		final int number = 5;
 		long start = System.currentTimeMillis();
 		for(int i = 0; i < total; i++) {
-			l.add(0, number);
+			list.add(0, number);
 		}
 		long end = System.currentTimeMillis();
 		System.out.format("在%s 同一索引插入%d 条数据，耗时%d 毫秒%n", type, total, end - start);
 	}
 	
-	private static void modify(List<Integer> l, String type) {
+	private static void modify(List<Integer> list, String type) {
 		int total = 1000* 100;
 		int index = total / 2;
 		final int number = 5;
-		// 初始化数组
 		for(int i = 0; i < total; i++) {
-			l.add(number);
+			list.add(number);
 		}
 		long start = System.currentTimeMillis();
 		for(int i = 0; i < total; i++) {
-			int n = l.get(index);
+			int n = list.get(index);
 			n++;
-			l.set(index, n);
+			list.set(index, n);
 		}
 		long end = System.currentTimeMillis();
 		System.out.format("%s 总长度是%d，定位到第%d 个数据，取出来+1再放回去%n"
