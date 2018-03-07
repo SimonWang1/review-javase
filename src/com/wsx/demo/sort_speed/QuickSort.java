@@ -3,6 +3,8 @@ package com.wsx.demo.sort_speed;
 public class QuickSort implements Sort{
 	// 快速排序
 	int[] numbers;
+	
+	// 算法逻辑
 	private static void quickSort(int[] numbers, int low, int high) {
 		int start = low;
 		int end = high;
@@ -31,16 +33,20 @@ public class QuickSort implements Sort{
 		}
 	}
 	
+	// 排序算法
 	@Override
 	public void sort() {
+		// 调用内部逻辑
 		quickSort(numbers, 0, numbers.length - 1);
 	}
 
+	// 获取排序后数组
 	@Override
 	public int[] values() {
 		return numbers;
 	}
 	
+	// 带参构造器传入待排序数组
 	public QuickSort(int[] numbers) {
 		this.numbers = numbers;
 	}

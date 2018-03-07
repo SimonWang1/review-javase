@@ -1,6 +1,7 @@
 package com.wsx.demo.property_fz;
 
 public class GirlFriend {
+	// 测试类
 	public static void main(String[] args) {
 		// 声明引用类型是Friend，jth表示引用，在栈内存中存储堆内存地址
 		// "=" 表示指向，使用new关键字调用重载构造器在堆内存创建对象并赋值

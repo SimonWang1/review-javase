@@ -3,6 +3,8 @@ package com.wsx.demo.sort_speed;
 public class SelectionSort implements Sort{
 	// 选择排序
 	int[] numbers;
+	
+	// 排序算法
 	@Override
 	public void sort() {
 		for(int i = 0; i < numbers.length; i++) {
@@ -20,11 +22,13 @@ public class SelectionSort implements Sort{
 		}
 	}
 
+	// 获取排序后数组
 	@Override
 	public int[] values() {
 		return numbers;
 	}
 	
+	// 带参构造器传入待排序数组
 	public SelectionSort(int[] numbers){
 		this.numbers = numbers;
 	}
