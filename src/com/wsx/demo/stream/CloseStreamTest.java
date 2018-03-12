@@ -7,7 +7,7 @@ import java.io.IOException;
 public class CloseStreamTest {
 	// 在finally中关闭流
 	public static void main(String[] args) {
-		File file = new File("D:/StreamFolder/Stream.txt");
+		File file = new File("D:/StreamFolder/stream.txt");
 		FileInputStream fis = null;
 		try {
 			fis = new FileInputStream(file);

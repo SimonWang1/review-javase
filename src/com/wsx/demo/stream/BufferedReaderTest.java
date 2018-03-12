@@ -6,13 +6,13 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class BufferedReaderTest {
-	// BufferedReader读取数据
+	// BufferedReader读取数据，一次读取一行
 	public static void main(String[] args) {
 		// File找到指定文件
-		File file = new File("D:/StreamFolder/ReadManyLine.txt");
+		File file = new File("D:/StreamFolder/read many line.txt");
 		// 创建文件字符流
 		try(FileReader fileReader = new FileReader(file);
-			// 缓冲流，减少IO读取次数
+			// 缓存流，减少IO读取次数
 			BufferedReader bufferedReader = new BufferedReader(fileReader)) {
 			while(true) {
 				String lines = bufferedReader.readLine();

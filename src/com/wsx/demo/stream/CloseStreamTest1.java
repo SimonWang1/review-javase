@@ -8,6 +8,7 @@ public class CloseStreamTest1 {
 	// 在try中自动关闭流
 	public static void main(String[] args) {
 		File file = new File("D:/StreamFolder/Stream.txt");
+		// JDK1.7开始支持try-with-resources
 		try (FileInputStream fis = new FileInputStream(file)){
 			byte[] all = new byte[(int)file.length()];
 			fis.read(all);

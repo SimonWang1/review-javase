@@ -5,11 +5,11 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 public class FileInputStreamTest {
-	// FileInputStream读取文本ASCll码
+	// FileInputStream读取字节流文本
 	public static void main(String[] args) {
 		try {
 			// File类找到指定文件
-			File file = new File("D:/StreamFolder/Stream.txt");
+			File file = new File("D:/StreamFolder/stream.txt");
 			// 创建注入指定文件的文件输入流
 			FileInputStream fis = new FileInputStream(file);
 			// 创建长度是文件大小的字节数组

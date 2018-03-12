@@ -5,12 +5,12 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 
 public class FileOutputStreamTest {
-	// FileOutputStream使用ASCll码写出文本
+	// FileOutputStream写出字节流文本
 	public static void main(String[] args) {
 		try {
 			// 创建文本绝对路径和文件名
-			File file = new File("D:/StreamFolder/Stream2.txt");
-			// 创建长度是2的字节数组，存放X, Y的ASCll码
+			File file = new File("D:/StreamFolder/stream2.txt");
+			// 创建长度是2的字节数组，存储X, Y的ASCll码
 			byte[] data = {88, 89};
 			// 创建注入指定文件的文件输出流
 			FileOutputStream fos = new FileOutputStream(file);

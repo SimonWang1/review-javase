@@ -5,7 +5,7 @@ import java.io.File;
 public class FindFileDemo {
 	// 查找指定文件夹不包含子文件夹的最大最小文件
 	public static void main(String[] args) {
-		// 声明文件和文件大小
+		// 声明文件和文件长度
 		File minFile = null;
 		File maxFile = null;
 		long minSize = Integer.MAX_VALUE;
