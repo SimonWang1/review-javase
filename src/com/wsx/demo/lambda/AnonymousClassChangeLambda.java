@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class AnonymousChangeLambda {
+public class AnonymousClassChangeLambda {
 	// 匿名类转换成Lambda表达式过程
 	public static void main(String[] args) {
 		Random r = new Random();

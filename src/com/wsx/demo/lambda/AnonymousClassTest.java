@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class AnonymousTest {
+public class AnonymousClassTest {
 	// 使用匿名类遍历集合进行比较
 	public static void main(String[] args) {
 		Random r = new Random();
