@@ -3,6 +3,7 @@ package com.wsx.demo.stream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.OutputStream;
 
 public class FileOutputStreamTest {
 	// FileOutputStream写出字节流文本
@@ -13,11 +14,11 @@ public class FileOutputStreamTest {
 			// 创建长度是2的字节数组，存储X, Y的ASCll码
 			byte[] data = {88, 89};
 			// 创建注入指定文件的文件输出流
-			FileOutputStream fos = new FileOutputStream(file);
+			OutputStream outputStream = new FileOutputStream(file);
 			// 将字节数组写进输出流
-			fos.write(data);
+			outputStream.write(data);
 			// 关闭输出流节省资源
-			fos.close();
+			outputStream.close();
 			System.out.println("创建完成");
 		} catch (IOException e) {
 			// TODO Auto-generated catch block

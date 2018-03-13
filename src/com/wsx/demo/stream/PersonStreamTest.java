@@ -4,8 +4,10 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.io.OutputStream;
 
 public class PersonStreamTest {
 	// 实体类序列化
@@ -17,11 +19,11 @@ public class PersonStreamTest {
 		File file = new File("D:/StreamFolder/person.txt");
 		try (
 				// 对象输出流
-				FileOutputStream fileOutputStream = new FileOutputStream(file);
-				ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
+				OutputStream outputStream = new FileOutputStream(file);
+				ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream);
 				// 对象输入流
-				FileInputStream fileInputStream = new FileInputStream(file);
-				ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);) {
+				InputStream inputStream = new FileInputStream(file);
+				ObjectInputStream objectInputStream = new ObjectInputStream(inputStream);) {
 			objectOutputStream.writeObject(person);
 			Person person2 = (Person) objectInputStream.readObject();
 			System.out.println(person2.name);

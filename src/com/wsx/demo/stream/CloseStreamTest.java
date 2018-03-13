@@ -3,16 +3,17 @@ package com.wsx.demo.stream;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 
 public class CloseStreamTest {
 	// 在finally中关闭流
 	public static void main(String[] args) {
 		File file = new File("D:/StreamFolder/stream.txt");
-		FileInputStream fis = null;
+		InputStream inputStream = null;
 		try {
-			fis = new FileInputStream(file);
+			inputStream = new FileInputStream(file);
 			byte[] all = new byte[(int)file.length()];
-			fis.read(all);
+			inputStream.read(all);
 			for(byte b : all) {
 				System.out.println(b);
 			}
@@ -21,7 +22,7 @@ public class CloseStreamTest {
 		}
 		finally {
 			try {
-				fis.close();
+				inputStream.close();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}

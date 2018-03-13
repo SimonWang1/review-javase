@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.io.Writer;
 
 public class PrintWriterTest {
 	// BufferedWriter写出数据，一次写出一行
@@ -11,9 +12,9 @@ public class PrintWriterTest {
 		// 创建文件绝对路径和文件名
 		File file = new File("D:/StreamFolder/hot game.txt");
 		// 创建文件字符流
-		try(FileWriter fileWriter = new FileWriter(file);
+		try(Writer writer = new FileWriter(file);
 			// 缓存流，减少IO写出次数
-			PrintWriter printWriter = new PrintWriter(fileWriter)){
+			PrintWriter printWriter = new PrintWriter(writer)){
 			printWriter.println("Player Unknowns Battle Ground");
 			printWriter.println("Final Fantacy XIV");
 			printWriter.println("World Of Warcraft");
