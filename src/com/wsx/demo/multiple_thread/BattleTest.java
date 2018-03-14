@@ -1,7 +1,7 @@
 package com.wsx.demo.multiple_thread;
 
-public class HeroThreadTest {
-	// 单线程测试
+public class BattleTest {
+	// 多线程测试2
 	public static void main(String[] args) {
 		Hero gareen = new Hero();
 		gareen.name = "盖伦";
@@ -19,13 +19,11 @@ public class HeroThreadTest {
 		ashe.name = "艾希";
 		ashe.hp = 320;
 		ashe.damage = 70;
-		
-		while(!teemo.isDead()) {
-			gareen.attackHero(teemo);
-		}
-		
-		while(!leesin.isDead()) {
-			ashe.attackHero(leesin);
-		}
+
+		Battle battle1 = new Battle(gareen, teemo);
+		// 使用Runnable实现多线程时需创建线程对象调用start()方法
+		new Thread(battle1).start();
+		Battle battle2 = new Battle(ashe, leesin);
+		new Thread(battle2).start();
 	}
 }

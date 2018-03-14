@@ -1,6 +1,6 @@
 package com.wsx.demo.multiple_thread;
 
-public class AnnonymousClassThreadTest {
+public class AnnonymousClassTest {
 	// 多线程测试3
 	public static void main(String[] args) {
 		Hero gareen = new Hero();
@@ -25,7 +25,7 @@ public class AnnonymousClassThreadTest {
 			// 在run()方法中编写逻辑
 			public void run() {
 				while(!teemo.isDead()) {
-					// JDK1.7以后调用外部局部变量时无需使用final声明
+					// JDK1.7开始调用外部局部变量无需使用final声明
 					gareen.attackHero(teemo);
 				}
 			}

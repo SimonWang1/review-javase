@@ -1,6 +1,6 @@
 package com.wsx.demo.multiple_thread;
 
-public class KillThreadTest {
+public class KillTest {
 	// 多线程测试1
 	public static void main(String[] args) {
 		Hero gareen = new Hero();
@@ -20,10 +20,10 @@ public class KillThreadTest {
 		ashe.hp = 320;
 		ashe.damage = 70;
 		
-		KillThread killThread1 = new KillThread(gareen, teemo);
+		Kill kill1 = new Kill(gareen, teemo);
 		// 线程start同时运行线程类中run方法
-		killThread1.start();
-		KillThread killThread2 = new KillThread(ashe, leesin);
-		killThread2.start();
+		kill1.start();
+		Kill kill2 = new Kill(ashe, leesin);
+		kill2.start();
 	}
 }
