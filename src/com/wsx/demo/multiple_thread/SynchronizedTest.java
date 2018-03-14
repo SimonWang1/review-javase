@@ -57,7 +57,7 @@ public class SynchronizedTest {
 			}
 		}
 		
-		// 等待所有较少hp线程结束
+		// 等待所有减少hp线程结束
 		for(Thread thread : reduceThreads) {
 			try {
 				thread.join();
