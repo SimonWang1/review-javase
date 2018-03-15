@@ -8,9 +8,9 @@ public class Hero {
 	private int heroMoveSpeed;
 
 	public static void main(String[] args) {
-		Hero gareen = new Hero("Gareen", 3000, 50, 200);
-		System.out.printf("HeroName: " + gareen.getHeroName() + "%nHeroHP: " + gareen.getHeroHP() + "%nHeroArmer: "
-				+ gareen.getHeroArmer() + "%nHeroMoveSpeed: " + gareen.getHeroMoveSpeed() + "%n");
+		Hero garen = new Hero("Garen", 3000, 50, 200);
+		System.out.printf("HeroName: " + garen.getHeroName() + "%nHeroHP: " + garen.getHeroHP() + "%nHeroArmer: "
+				+ garen.getHeroArmer() + "%nHeroMoveSpeed: " + garen.getHeroMoveSpeed() + "%n");
 	}
 
 	//  Ù–‘set£¨get∑Ω∑®

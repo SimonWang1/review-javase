@@ -19,7 +19,7 @@ public class S_Hero {
 		}
 	}
 	
-	public void attrackHero(Hero hero) {
+	public void attrackHero(S_Hero hero) {
 		hero.hp -= damage;
 		System.out.printf("%s 正在攻击 %s，%s 的血量变成了 %.0f%n", name, hero.name, hero.name, hero.hp);
 		if(hero.isDead()) {

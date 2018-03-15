@@ -3,10 +3,10 @@ package com.wsx.demo.multiple_thread;
 public class PriorityTest2 {
 	// 线程优先级测试2
 	public static void main(String[] args) {
-		P_Hero gareen = new P_Hero();
-		gareen.name = "盖伦";
-		gareen.hp = 6160;
-		gareen.damage = 1;
+		P_Hero garen = new P_Hero();
+		garen.name = "盖伦";
+		garen.hp = 6160;
+		garen.damage = 1;
 		P_Hero teemo = new P_Hero();
 		teemo.name = "提莫";
 		teemo.hp = 3000;
@@ -23,7 +23,7 @@ public class PriorityTest2 {
 		Thread thread1 = new Thread() {
 			public void run() {
 				while(!teemo.isDead()) {
-					gareen.attackHero(teemo);
+					garen.attackHero(teemo);
 				}
 			}
 		};

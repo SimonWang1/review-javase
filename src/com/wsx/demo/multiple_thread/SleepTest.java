@@ -1,7 +1,7 @@
 package com.wsx.demo.multiple_thread;
 
 public class SleepTest {
-	// sleep()∑Ω∑®≤‚ ‘
+	// sleep()≤‚ ‘
 	public static void main(String[] args) {
 		Thread thread = new Thread() {
 			public void run() {

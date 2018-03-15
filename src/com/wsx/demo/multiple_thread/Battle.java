@@ -10,7 +10,7 @@ public class Battle implements Runnable{
 		this.hero2 = hero2;
 	}
 	
-	// 重写run()方法
+	// 重写run()
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub

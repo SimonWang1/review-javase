@@ -3,10 +3,10 @@ package com.wsx.demo.multiple_thread;
 public class HeroTest {
 	// 单线程测试
 	public static void main(String[] args) {
-		Hero gareen = new Hero();
-		gareen.name = "盖伦";
-		gareen.hp = 616;
-		gareen.damage = 50;
+		Hero garen = new Hero();
+		garen.name = "盖伦";
+		garen.hp = 616;
+		garen.damage = 50;
 		Hero teemo = new Hero();
 		teemo.name = "提莫";
 		teemo.hp = 300;
@@ -21,7 +21,7 @@ public class HeroTest {
 		ashe.damage = 70;
 		
 		while(!teemo.isDead()) {
-			gareen.attackHero(teemo);
+			garen.attackHero(teemo);
 		}
 		
 		while(!leesin.isDead()) {

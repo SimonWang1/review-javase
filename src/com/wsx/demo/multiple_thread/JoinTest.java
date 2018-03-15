@@ -3,10 +3,10 @@ package com.wsx.demo.multiple_thread;
 public class JoinTest {
 	// join()·½·¨²âÊÔ
 	public static void main(String[] args) {
-		Hero gareen = new Hero();
-		gareen.name = "¸ÇÂ×";
-		gareen.hp = 616;
-		gareen.damage = 50;
+		Hero garen = new Hero();
+		garen.name = "¸ÇÂ×";
+		garen.hp = 616;
+		garen.damage = 50;
 		Hero teemo = new Hero();
 		teemo.name = "ÌáÄª";
 		teemo.hp = 300;
@@ -23,7 +23,7 @@ public class JoinTest {
 		Thread thread1 = new Thread() {
 			public void run() {
 				while(!teemo.isDead()) {
-					gareen.attackHero(teemo);
+					garen.attackHero(teemo);
 				}
 			}
 		};

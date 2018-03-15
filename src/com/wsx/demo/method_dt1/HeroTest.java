@@ -4,8 +4,8 @@ public class HeroTest {
 	// 测试类
 	public static void main(String[] args) {
 		// 分别创建英雄对象
-		Hero gareen = new ADHero();
-		gareen.heroName = "gareen";
+		Hero garen = new ADHero();
+		garen.heroName = "gareen";
 		ADHero ashe = new ADHero();
 		ashe.heroName = "Ashe";
 		APHero teemo = new APHero();
@@ -13,8 +13,8 @@ public class HeroTest {
 		ADAPHero caitlyn = new ADAPHero();
 		caitlyn.heroName = "Caitlyn";
 		// 调用kill方法的同时调用参数对象重写Mortal接口的die方法
-		gareen.kill(ashe);
-		gareen.kill(teemo);
-		gareen.kill(caitlyn);
+		garen.kill(ashe);
+		garen.kill(teemo);
+		garen.kill(caitlyn);
 	}
 }

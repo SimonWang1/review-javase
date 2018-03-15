@@ -3,10 +3,10 @@ package com.wsx.demo.multiple_thread;
 public class SynchronizedTest {
 	// 线程同步测试
 	public static void main(String[] args) {
-		final S_Hero gareen = new S_Hero();
-		gareen.name = "盖伦";
-		gareen.hp = 10000;
-		System.out.printf("盖伦的初始血量是 %.0f%n", gareen.hp);
+		final S_Hero garen = new S_Hero();
+		garen.name = "盖伦";
+		garen.hp = 10000;
+		System.out.printf("盖伦的初始血量是 %.0f%n", garen.hp);
 		
 		int n = 10000;
 		
@@ -17,7 +17,7 @@ public class SynchronizedTest {
 		for(int i = 0; i < n; i++) {
 			Thread thread = new Thread() {
 				public void run() {
-					gareen.recover();
+					garen.recover();
 					try {
 						Thread.sleep(1000);
 					} catch (InterruptedException e) {
@@ -34,7 +34,7 @@ public class SynchronizedTest {
 		for(int i = 0; i < n; i++) {
 			Thread thread = new Thread() {
 				public void run() {
-					gareen.hurt();
+					garen.hurt();
 					try {
 						Thread.sleep(1000);
 					} catch (InterruptedException e) {
@@ -66,7 +66,6 @@ public class SynchronizedTest {
 				e.printStackTrace();
 			}
 		}
-		
-		System.out.printf("%d 个增加线程和 %d 个减少线程结束后%n盖伦的血量变成了 %.0f%n", n, n, gareen.hp);
+		System.out.printf("%d 个增加线程和 %d 个减少线程结束后%n盖伦的血量变成了 %.0f%n", n, n, garen.hp);
 	}
 }
