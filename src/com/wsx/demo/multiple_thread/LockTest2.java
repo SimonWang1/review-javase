@@ -12,7 +12,7 @@ public class LockTest2 {
 		Lock lock = new ReentrantLock();
 		// 通过lock对象得到condition对象，调用condition的await，signal，signalAll方法
 		// 对应synchronized中的wait，notify，notifyAll方法
-		// 使用lock可以规避死锁
+		// 使用lock可以规避死锁，要在finally中unlock
 		Condition condition = lock.newCondition();
 
 		Thread thread1 = new Thread() {

@@ -4,7 +4,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class SynchronizedTest2 {
-	// synchronized测试
+	// synchronized同步对象测试
 	public static void main(String[] args) {
 		final Object someObject = new Object();
 		

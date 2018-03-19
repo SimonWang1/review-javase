@@ -4,8 +4,8 @@ import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
-public class ThreadPool {
-	// JDK自带线程池测试
+public class ThreadPoolTest {
+	// JDK线程池测试
 	public static void main(String[] args) {
 		// 五个参数分别表示：
 		// corePoolSize: 初始化线程数

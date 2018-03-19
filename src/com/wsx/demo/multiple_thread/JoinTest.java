@@ -30,7 +30,7 @@ public class JoinTest {
 		thread1.start();
 		
 		try {
-			// 将thread1加入到main thread，只有在thread1执行完毕后再顺序执行thread2
+			// 将thread1 join到main thread，只有在thread1执行完毕后再顺序执行thread2
 			thread1.join();
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block

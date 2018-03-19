@@ -7,12 +7,12 @@ public class InteractiveTest3 {
 		garen.name = "¸ÇÂ×";
 		garen.hp = 616;
 		
-		for(int i = 0; i < 5; i++) {
-			new RecoverThread(garen).start();
-		}
-		
 		for(int i = 0; i < 2; i++) {
 			new HurtThread(garen).start();
+		}
+		
+		for(int i = 0; i < 5; i++) {
+			new RecoverThread(garen).start();
 		}
 	}
 	

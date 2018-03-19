@@ -1,7 +1,7 @@
 package com.wsx.demo.multiple_thread;
 
 public class SynchronizedTest {
-	// 线程同步测试
+	// 多线程同步测试
 	public static void main(String[] args) {
 		final S_Hero garen = new S_Hero();
 		garen.name = "盖伦";
