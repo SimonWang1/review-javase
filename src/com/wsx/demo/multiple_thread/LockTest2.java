@@ -14,7 +14,6 @@ public class LockTest2 {
 		// 对应synchronized中的wait，notify，notifyAll方法
 		// 使用lock可以规避死锁，要在finally中unlock
 		Condition condition = lock.newCondition();
-
 		Thread thread1 = new Thread() {
 			public void run() {
 				try {

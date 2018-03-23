@@ -11,7 +11,6 @@ public class LockTest {
 	public static void main(String[] args) {
 		// Lock接口引用指向实现类构造器，创建实现类对象
 		Lock lock = new ReentrantLock();
-		
 		Thread thread1 = new Thread() {
 			public void run() {
 				boolean locked = false;
