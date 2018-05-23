@@ -56,7 +56,7 @@ class Leaf extends Mid {
 public class SequenceTest1 {
 	// 执行顺序
 	public static void main(String[] args) {
-		// 执行顺序从上到下优先执行静态代码块，再依次执行普通初始化块，无参构造器，带参构造器
+		// 子类主方法，优先执行静态代码块，再依次执行普通初始化块，无参构造器，带参构造器
 		new Leaf();
 		System.out.println("********************");
 		// 静态代码块仅执行一次

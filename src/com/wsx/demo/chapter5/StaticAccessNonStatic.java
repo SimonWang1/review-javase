@@ -7,7 +7,7 @@ public class StaticAccessNonStatic {
 	}
 
 	public static void main(String[] args) {
-		// 通过new关键字调用构造器创建对象，访问静态方法
+		// 在主方法中通过new关键字调用构造器创建对象，访问非静态方法
 		new StaticAccessNonStatic().info();
 	}
 }

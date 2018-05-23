@@ -5,7 +5,7 @@ public class PersonTest {
 		Person p = new Person();
 		// age成员变量被封装，不能直接访问
 		// p.age = 1000;
-		// 下面语句根据判断条件输出错误错误，全局变量在堆内存中初始化为0
+		// 下面语句根据判断条件输出错误，全局变量在堆内存中初始化为0
 		p.setAge(1000);
 		System.out.println("未能赋值age成员变量时：" + p.getAge());
 		// 成功修改

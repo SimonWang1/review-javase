@@ -9,9 +9,9 @@ public class SequenceTest2 {
 	}
 
 	public static void main(String[] args) {
-		// 从上到下优先执行静态代码块
+		// 父类主方法，优先调用父类静态代码块
 		System.out.println("***************");
-		// 依次执行无参构造器
+		// 发生多态时优先调用子类静态代码块，再依次调用构造器，静态值对应类中赋值
 		SequenceTest2 parent = new Child();
 		// 打印父类引用，在栈内存中存储堆内存地址，消除未引用异常
 		System.out.println(parent.toString());

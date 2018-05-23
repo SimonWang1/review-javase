@@ -16,7 +16,7 @@ public class ArrayListTest {
 		}
 		// 创建容器类ArrayList，用于存放对象
 		List<String> hero = new ArrayList<>();
-		hero.add("garren");
+		hero.add("garen");
 		System.out.println(hero.size());
 		// ArrayList的元素个数即是容器长度
 		hero.add("teemo");

@@ -11,6 +11,7 @@ public class VariableOverrideTest {
 		// 方法局部变量覆盖成员变量
 		int price = 68;
 		System.out.println(price);
+		// 调用全局变量
 		System.out.println(VariableOverrideTest.price);
 		new VariableOverrideTest().info();
 	}
