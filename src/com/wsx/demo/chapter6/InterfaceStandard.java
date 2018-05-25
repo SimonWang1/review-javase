@@ -10,6 +10,7 @@ public interface InterfaceStandard {
 
 	public void getData(String msg);
 
+	// Java8新特性
 	// 在接口中定义默认方法，需要使用default修饰
 	default void print(String... msgs) {
 		for (String msg : msgs) {
