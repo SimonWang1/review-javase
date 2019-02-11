@@ -24,7 +24,7 @@ public class FindFileDemo {
 				maxSize = file.length();
 				maxFile = file;
 			}
-			// 找到不为零的最小文件
+			// 找到不为空的最小文件
 			if(file.length() != 0 && file.length() < minSize) {
 				minSize = file.length();
 				minFile = file;
