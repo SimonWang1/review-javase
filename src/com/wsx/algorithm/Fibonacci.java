@@ -2,8 +2,8 @@ package com.wsx.algorithm;
 
 import java.util.Scanner;
 
+// 斐波那契数列
 public class Fibonacci {
-	// 斐波那契数列
 	public static void main(String[] args) {
 		while(true) {
 		@SuppressWarnings("resource")

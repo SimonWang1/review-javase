@@ -2,8 +2,8 @@ package com.wsx.algorithm;
 
 import java.util.Scanner;
 
+// 递归调用栈
 public class Factorial {
-	// 递归调用栈
 	public static void main(String[] args) {
 		@SuppressWarnings("resource")
 		Scanner scan = new Scanner(System.in);

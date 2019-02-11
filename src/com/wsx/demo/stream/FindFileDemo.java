@@ -2,8 +2,8 @@ package com.wsx.demo.stream;
 
 import java.io.File;
 
+// 查找指定文件夹不包含子文件夹的最大最小文件
 public class FindFileDemo {
-	// 查找指定文件夹不包含子文件夹的最大最小文件
 	public static void main(String[] args) {
 		// 声明文件和文件长度
 		File minFile = null;
@@ -13,19 +13,19 @@ public class FindFileDemo {
 		// 查找目录
 		File f = new File("C:/windows");
 		File[] files = f.listFiles();
-		if(files == null)
+		if (files == null)
 			return;
-		for(File file : files) {
+		for (File file : files) {
 			// 跳过文件夹只比较文件
-			if(file.isDirectory())
+			if (file.isDirectory())
 				continue;
 			// 找到最大文件
-			if(file.length() > maxSize) {
+			if (file.length() > maxSize) {
 				maxSize = file.length();
 				maxFile = file;
 			}
 			// 找到不为空的最小文件
-			if(file.length() != 0 && file.length() < minSize) {
+			if (file.length() != 0 && file.length() < minSize) {
 				minSize = file.length();
 				minFile = file;
 			}

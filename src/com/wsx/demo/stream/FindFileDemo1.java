@@ -2,8 +2,8 @@ package com.wsx.demo.stream;
 
 import java.io.File;
 
+// 递归查找指定文件夹包含子文件夹的最大最小文件
 public class FindFileDemo1 {
-	// 递归查找指定文件夹包含子文件夹的最大最小文件
 	// 声明文件和文件长度为静态全局变量
 	private static File minFile = null;
 	private static File maxFile = null;
@@ -21,30 +21,29 @@ public class FindFileDemo1 {
 	
 	// 递归查找
 	private static void listFiles(File file) {
+		// 若是文件夹
+		if (file.isDirectory()) {
+			// 声明内容
+			File[] files = file.listFiles();
+			// 遍历不为空的内容
+			if (files != null) {
+				for (File f : files) {
+					// 递归调用查找文件
+					listFiles(f);
+				}
+			}
+		}
 		// 若是文件
-		if(file.isFile()) {
+		if (file.isFile()) {
 			// 找到最大文件
-			if(file.length() > maxSize) {
+			if (file.length() > maxSize) {
 				maxSize = file.length();
 				maxFile = file;
 			}
 			// 找到不为零的最小文件
-			if(file.length() != 0 && file.length() < minSize) {
+			if (file.length() != 0 && file.length() < minSize) {
 				minSize = file.length();
 				minFile = file;
-			}
-		}
-		// 若是文件夹
-		if(file.isDirectory()) {
-			// 声明文件夹内容
-			File[] files = file.listFiles();
-			// 若不为空
-			if(files != null) {
-				// 遍历内容
-				for(File f : files) {
-					// 递归调用
-					listFiles(f);
-				}
 			}
 		}
 	}

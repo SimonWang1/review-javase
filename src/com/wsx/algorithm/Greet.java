@@ -1,14 +1,14 @@
 package com.wsx.algorithm;
 
+// 调用栈
 public class Greet {
-	// 调用栈
 	public static void main(String[] args) {
 		// 调用greet方法，在栈帧存储局部变量
 		greet("jackson");
 	}
 
 	public static void greet(String name) {
-		// 按方法顺序执行
+		// 顺序执行
 		System.out.println("hello, " + name + "!");
 		// 调用greet2方法，此时greet处于挂起状态
 		greet2(name);

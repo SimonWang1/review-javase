@@ -1,7 +1,7 @@
 package com.wsx.algorithm;
 
+// µ›πÈÀ„∑®
 public class Recursive {
-	// µ›πÈÀ„∑®
 	public static void main(String[] args) {
 		System.out.println(func(10));
 		System.out.println(func2(10));

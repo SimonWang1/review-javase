@@ -1,7 +1,7 @@
 package com.wsx.algorithm;
 
+// 冒泡排序
 public class BubbleSort {
-	// 冒泡排序
 	public static void main(String[] args) {
 		int[] intArray = { 54, 6, 78, 34, 12, 45 };
 		// 依次选取数组元素

@@ -1,7 +1,7 @@
 package com.wsx.algorithm;
 
+// 选择排序
 public class SelectionSort {
-	// 选择排序
 	public static void main(String[] args) {
 		int[] intArray = { 54, 6, 78, 34, 12, 45 };
 		System.out.println("排序前的数组: ");

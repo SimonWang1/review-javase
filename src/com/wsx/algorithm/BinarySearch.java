@@ -1,7 +1,7 @@
 package com.wsx.algorithm;
 
+// 二分法查找
 public class BinarySearch {
-	// 二分法查找
 	public static void main(String[] args) {
 		int[] intArray = { 1, 3, 5, 7, 9 };
 		binarySearch(intArray, 7);
