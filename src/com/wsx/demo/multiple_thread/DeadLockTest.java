@@ -3,10 +3,8 @@ package com.wsx.demo.multiple_thread;
 public class DeadLockTest {
 	// ËÀËø²âÊÔ
 	public static void main(String[] args) {
-		final Hero ahri = new Hero();
-		ahri.name = "°¢Àê";
-		final Hero annie = new Hero();
-		annie.name = "°²Äİ";
+		final Hero ahri = new Hero("°¢Àê");
+		final Hero annie = new Hero("°²Äİ");
 		
 		Thread thread1 = new Thread() {
 			public void run() {

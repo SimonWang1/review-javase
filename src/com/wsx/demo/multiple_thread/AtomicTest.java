@@ -3,7 +3,7 @@ package com.wsx.demo.multiple_thread;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class AtomicTest {
-	// 多线程原子性测试
+	// 多线程原子性
 	private static int value = 0;
 	private static AtomicInteger atomicValue = new AtomicInteger();
 	public static void main(String[] args) {
@@ -25,7 +25,6 @@ public class AtomicTest {
 			try {
 				thread.join();
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}
@@ -48,7 +47,6 @@ public class AtomicTest {
 			try {
 				thread.join();
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		}

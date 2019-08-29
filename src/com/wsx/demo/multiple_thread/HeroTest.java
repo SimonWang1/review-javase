@@ -3,28 +3,16 @@ package com.wsx.demo.multiple_thread;
 public class HeroTest {
 	// 单线程测试
 	public static void main(String[] args) {
-		Hero garen = new Hero();
-		garen.name = "盖伦";
-		garen.hp = 616;
-		garen.damage = 50;
-		Hero teemo = new Hero();
-		teemo.name = "提莫";
-		teemo.hp = 300;
-		teemo.damage = 30;
-		Hero leesin = new Hero();
-		leesin.name = "李青";
-		leesin.hp = 455;
-		leesin.damage = 40;
-		Hero ashe = new Hero();
-		ashe.name = "艾希";
-		ashe.hp = 320;
-		ashe.damage = 70;
+		Hero garen = new Hero("盖伦", 616, 50);
+		Hero teemo = new Hero("提莫", 300, 30);
+		Hero leesin = new Hero("李青", 455, 40);
+		Hero ashe = new Hero("艾希", 320, 70);
 		
-		while(!teemo.isDead()) {
+		while (!teemo.isDead()) {
 			garen.attackHero(teemo);
 		}
 		
-		while(!leesin.isDead()) {
+		while (!leesin.isDead()) {
 			ashe.attackHero(leesin);
 		}
 	}
