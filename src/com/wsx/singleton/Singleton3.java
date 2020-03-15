@@ -1,15 +1,14 @@
 package com.wsx.singleton;
 
 public class Singleton3 {
-	// Double Checked Locking
+	// Double Checked Locking 双重检查锁
 	public static void main(String[] args) {
-		Singleton3 s1, s2;
-		s1 = Singleton3.getSingleton3();
-		s2 = Singleton3.getSingleton3();
+		Singleton3 s1 = Singleton3.getSingleton3();
+		Singleton3 s2 = Singleton3.getSingleton3();
 		System.out.println(s1 == s2);
 	}
 
-	// DCL需要使用volatile关键字私有静态变量保证唯一性，但会影响性能
+	// DCL需要使用volatile关键字私有静态引用保证唯一性，但会影响性能
 	private static volatile Singleton3 singleton3 = null;
 
 	public static Singleton3 getSingleton3() {
@@ -32,6 +31,5 @@ public class Singleton3 {
 		return singleton3;
 	}
 
-	private Singleton3() {
-	}
+	private Singleton3() {}
 }
